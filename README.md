@@ -1,4 +1,4 @@
-<h1 align="center">Welcome here :D 👋</h1>
+<h1 align="center">Hello there :D 👋</h1>
 <img src="https://activity-graph.herokuapp.com/graph?username=kotru21&theme=react-dark&hide_border=true&area=true" >
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kotru21&theme=dark&hide_border=true&area=true" align="right" >
 <img src="https://github-readme-stats.vercel.app/api?username=kotru21&stars,commits,prs,issues,contribs&theme=dark&hide_border=true&area=true"   >
