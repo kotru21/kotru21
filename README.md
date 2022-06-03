@@ -2,7 +2,7 @@
 <p align="center"> I im novice developer and here you can see some of my projects.</p>
 <hr>
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kotru21&theme=dracula" align="right" width="40%">
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kotru21&theme=dracula" align="right" width="38%">
 <img src="https://github-readme-stats.vercel.app/api?username=kotru21&stars,commits,prs,issues,contribs&theme=dracula"   >
 
 
