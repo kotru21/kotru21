@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to my profile :D 👋</h1>
+<h1 align="center">Welcome here :D 👋</h1>
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kotru21&theme=dark" align="right" width="38%">
 <img src="https://github-readme-stats.vercel.app/api?username=kotru21&stars,commits,prs,issues,contribs&theme=dark"   >
 
