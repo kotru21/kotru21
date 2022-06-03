@@ -8,7 +8,7 @@
 <hr>
 <h1 align="center">Im currently working on: </h1>
 <p align="center">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=kotru21&repo=kotikov&theme=dark&hide_border=true&area=true" width="60%">
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=kotru21&repo=kotikov&theme=dark&hide_border=true&area=true" >
 </p>
 <hr>
 <p align="center">
