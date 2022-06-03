@@ -9,5 +9,5 @@
 <hr>
 <h1 align="center">Im currently working on: </h1>
 <p align="center">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=kotru21&repo=kotikov&theme=dark">
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=kotru21&repo=kotikov&theme=dark" width="60%">
 </p>
