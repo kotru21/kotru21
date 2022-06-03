@@ -12,7 +12,7 @@
 </p>
 <hr>
 <p align="center">
-<img src="https://estruyf-github.azurewebsites.net/api/VisitorHit?user=kotru21&repo=kotikov&countColorcountColor&countColor=orange"/ width="10%">
-<a href="https://www.instagram.com/arsenij_kotikov/" target="_blank"><img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?&style=flat-square&logo=instagram&logoColor=white" alt="Instagram" width="10%"></a>
-<a href="https://twitter.com/arsenij_kotikov/" target="_blank"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter" width="9%"></a>
+<img src="https://estruyf-github.azurewebsites.net/api/VisitorHit?user=kotru21&repo=kotikov&countColorcountColor&countColor=orange">
+<a href="https://www.instagram.com/arsenij_kotikov/" target="_blank"><img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?&style=flat-square&logo=instagram&logoColor=white" alt="Instagram" ></a>
+<a href="https://twitter.com/arsenij_kotikov/" target="_blank"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter" ></a>
 </p>
