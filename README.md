@@ -7,3 +7,7 @@
 <hr>
 <p align="center"> You can find more information <a href="https://kotikov.pages.dev">here</a></p>
 <hr>
+<h1 align="center">Im currently working on: </h1>
+<p align="center">
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=kotru21&repo=kotikov&theme=dark">
+</p>
