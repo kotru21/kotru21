@@ -6,8 +6,8 @@
 </p>
 <hr />
 
-<img src="https://user-images.githubusercontent.com/88907641/176977557-c2d4d7bf-e882-49a0-aeae-ec069ed8e442.png" align="left">
-<img src="https://user-images.githubusercontent.com/88907641/176977648-4c691fde-25d8-4a7b-9faf-4a353c6e9a10.png" align="right">
+<img src="https://user-images.githubusercontent.com/88907641/176977557-c2d4d7bf-e882-49a0-aeae-ec069ed8e442.png" align="left" width="20%">
+<img src="https://user-images.githubusercontent.com/88907641/176977648-4c691fde-25d8-4a7b-9faf-4a353c6e9a10.png" align="right" width="20%">
 
 <p align="center">
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kotru21&theme=dark&hide_border=true&area=true&layout=default" width="50%"> 
