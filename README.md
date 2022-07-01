@@ -1,8 +1,14 @@
 <h1 align="center">Hello there :D 👋</h1>
+
+<div width="100%">
+
 <img src="https://activity-graph.herokuapp.com/graph?username=kotru21&theme=react-dark&hide_border=true&area=true" >
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kotru21&theme=dark&hide_border=true&area=true" align="right" >
 <img src="https://github-readme-stats.vercel.app/api?username=kotru21&stars,commits,prs,issues,contribs&theme=dark&hide_border=true&area=true"   >
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=kotru21&theme=dark&hide_border=true&area=true" alt="github stats">
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=kotru21&theme=dark&hide_border=true&area=true" alt="github stats" >
+
+</div>
+
 <hr>
 <p align="center"> You can find more information <a href="https://kotikov.pages.dev">here</a></p>
 <hr>
