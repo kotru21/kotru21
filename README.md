@@ -1,17 +1,16 @@
 <h1 align="center">Hello there :D 👋</h1>
 
 <p align="center">
-<img src="https://activity-graph.herokuapp.com/graph?username=kotru21&theme=react-dark&hide_border=true&area=true" > 
+<img src="https://activity-graph.herokuapp.com/graph?username=kotru21&theme=react-dark&hide_border=true&area=true" width="100%"> 
 </p>
 <p align="center">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kotru21&theme=dark&hide_border=true&area=true&layout=default" > 
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kotru21&theme=dark&hide_border=true&area=true&layout=default" width="100%"> 
 </p>
 <p align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=kotru21&stars,commits,prs,issues,contribs&theme=dark&hide_border=true&area=true" >
+<img src="https://github-readme-stats.vercel.app/api?username=kotru21&stars,commits,prs,issues,contribs&theme=dark&hide_border=true&area=true" width="100%">
 </p>
 <p align="center">
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=kotru21&theme=dark&hide_border=true&area=true" alt="github stats" >
-
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=kotru21&theme=dark&hide_border=true&area=true" alt="github stats" width="100%">
 </p>
 
 <hr>
