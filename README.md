@@ -10,13 +10,13 @@
 <img src="https://user-images.githubusercontent.com/88907641/176977648-4c691fde-25d8-4a7b-9faf-4a353c6e9a10.png" align="right" width="20%">
 
 <p align="center">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kotru21&theme=dark&hide_border=true&area=true&layout=compact" width="500vw"> 
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kotru21&theme=dark&hide_border=true&area=true&layout=compact" width="45%"> 
 </p>
 <p align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=kotru21&stars,commits,prs,issues,contribs&theme=dark&hide_border=true&area=true" width="500vw">
+<img src="https://github-readme-stats.vercel.app/api?username=kotru21&stars,commits,prs,issues,contribs&theme=dark&hide_border=true&area=true" width="45%">
 </p>
 <p align="center">
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=kotru21&theme=dark&hide_border=true&area=true" alt="github stats" width="500vw">
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=kotru21&theme=dark&hide_border=true&area=true" alt="github stats" width="45%">
 </p>
 
 <hr>
