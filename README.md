@@ -6,6 +6,33 @@
 </p>
 <hr />
 
+```C++
+// Here is some info about me:D
+#include <iostream>
+using namespace std;
+
+class kotru
+{
+    private:
+    string NowLearning[] {C++, Python};
+    public:
+    string name Arsenij Kotikov;
+    string website https://kotikov.pages.dev;
+    string languages[] {JavaScript, NodeJs, HTML, CSS, Bootstrap, PHP};
+         void print() {
+         std::cout << "name" << name << endl;
+         std::cout << "website" << website  << endl;
+         std::cout << "languages" << languages[] << endl;
+         std::cout << "languages, learning" << NowLearning[] << endl;
+     }
+    
+};
+int main(){
+  kotru.print();
+}
+
+```
+<hr />
 <img src="https://user-images.githubusercontent.com/88907641/176977557-c2d4d7bf-e882-49a0-aeae-ec069ed8e442.png" align="left" width="20%">
 <img src="https://user-images.githubusercontent.com/88907641/176977648-4c691fde-25d8-4a7b-9faf-4a353c6e9a10.png" align="right" width="20%">
 
