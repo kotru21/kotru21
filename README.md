@@ -27,6 +27,7 @@ class kotru
      }
     
 };
+
 int main()
 {
   kotru.print();
