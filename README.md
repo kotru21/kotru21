@@ -14,11 +14,11 @@ using namespace std;
 class kotru
 {
     private:
-    string NowLearning[] {C++, Python};
+    string NowLearning[] {"C++", "Python"};
     public:
-    string name = Arsenij Kotikov;
-    string website = https://kotikov.pages.dev;
-    string languages[] {JavaScript, NodeJs, HTML, CSS, Bootstrap, PHP};
+    string name = "Arsenij Kotikov";
+    string website = "https://kotikov.pages.dev";
+    string languages[] {"JavaScript", "NodeJs", "HTML", "CSS", "Bootstrap", "PHP"};
          void print() {
          std::cout << "name" << name << endl;
          std::cout << "website" << website  << endl;
