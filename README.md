@@ -13,7 +13,6 @@ using namespace std;
 
 class kotru
 {
-    private:
     string NowLearning[] {"C++", "Python"};
     public:
     string name = "Arsenij Kotikov";
