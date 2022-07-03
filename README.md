@@ -62,13 +62,13 @@ int main()
 <h1 align="center">My other repos </h1>
 
 <img src="https://user-images.githubusercontent.com/88907641/177035093-73650027-6196-4a71-871b-81d58a4baa6f.png" align="left" width="50%">
-<a href="https://github.com/kotru21/kotru21"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=kotru21&repo=kotru21&theme=dark&hide_border=true&area=true" align="right" width="45%"></a>
+<a href="https://github.com/kotru21/kotru21"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=kotru21&repo=kotru21&theme=dark&hide_border=true&area=true" align="right" width="42%"></a>
 
-<a href="https://github.com/kotru21/count"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=kotru21&repo=count&theme=dark&hide_border=true&area=true" align="right" width="45%"></a>
+<a href="https://github.com/kotru21/count"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=kotru21&repo=count&theme=dark&hide_border=true&area=true" align="right" width="42%"></a>
 
-<a href="https://github.com/kotru21/lessgo"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=kotru21&repo=lessgo&theme=dark&hide_border=true&area=true" align="right" width="45%"></a>
+<a href="https://github.com/kotru21/lessgo"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=kotru21&repo=lessgo&theme=dark&hide_border=true&area=true" align="right" width="42%"></a>
 
-<a href="https://github.com/kotru21/kotikov"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=kotru21&repo=kotikov&theme=dark&hide_border=true&area=true" align="right" width="45%"></a>
+<a href="https://github.com/kotru21/kotikov"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=kotru21&repo=kotikov&theme=dark&hide_border=true&area=true" align="right" width="42%"></a>
 
 <hr width="100%">
 <p align="center">
