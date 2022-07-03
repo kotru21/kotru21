@@ -5,7 +5,7 @@
 
 
 <p align="center">
-<img src="https://activity-graph.herokuapp.com/graph?username=kotru21&theme=react-dark&hide_border=true&area=true" width="100%"> 
+<img src="https://activity-graph.herokuapp.com/graph?username=kotru21&theme=dracula&hide_border=true&area=true&bg_color=false" width="100%"> 
 </p>
 <hr />
 
@@ -41,13 +41,13 @@ int main()
 <img src="https://user-images.githubusercontent.com/88907641/176977648-4c691fde-25d8-4a7b-9faf-4a353c6e9a10.png" align="right" width="20%">
 
 <p align="center">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kotru21&theme=dark&hide_border=true&area=true&layout=compact" width="48%"> 
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kotru21&theme=dracula&hide_border=true&area=true&layout=compact" width="48%"> 
 </p>
 <p align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=kotru21&stars,commits,prs,issues,contribs&theme=dark&hide_border=true&area=true" width="48%">
+<img src="https://github-readme-stats.vercel.app/api?username=kotru21&stars,commits,prs,issues,contribs&theme=dracula&hide_border=true&area=true" width="48%">
 </p>
 <p align="center">
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=kotru21&theme=dark&hide_border=true&area=true" alt="github stats" width="48%">
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=kotru21&theme=dracula&hide_border=true&area=true" alt="github stats" width="48%">
 </p>
 
 <hr>
@@ -55,22 +55,22 @@ int main()
 <hr>
 <h1 align="center">Im currently working on: </h1>
 <p align="center">
-<a href="https://github.com/kotru21/kotikov"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=kotru21&repo=kotikov&theme=dark&hide_border=true&area=true" width="48%"></a>
+<a href="https://github.com/kotru21/kotikov"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=kotru21&repo=kotikov&theme=dracula&hide_border=true&area=true" width="48%"></a>
 </p>
 
 <hr width="100%"/>
 <h1 align="center">My other repos </h1>
 
-<a href="https://github.com/kotru21/kotikov"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=kotru21&repo=PYRAMIDE-CPP&theme=dark&hide_border=true&area=true" align="right" width="42%"></a>
+<a href="https://github.com/kotru21/kotikov"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=kotru21&repo=PYRAMIDE-CPP&theme=dracula&hide_border=true&area=true" align="right" width="42%"></a>
 
 <img src="https://user-images.githubusercontent.com/88907641/177035093-73650027-6196-4a71-871b-81d58a4baa6f.png" align="left" width="42%">
-<a href="https://github.com/kotru21/kotru21"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=kotru21&repo=kotru21&theme=dark&hide_border=true&area=true" align="right" width="42%"></a>
+<a href="https://github.com/kotru21/kotru21"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=kotru21&repo=kotru21&theme=dracula&hide_border=true&area=true" align="right" width="42%"></a>
 
-<a href="https://github.com/kotru21/count"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=kotru21&repo=count&theme=dark&hide_border=true&area=true" align="right" width="42%"></a>
+<a href="https://github.com/kotru21/count"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=kotru21&repo=count&theme=dracula&hide_border=true&area=true" align="right" width="42%"></a>
 
-<a href="https://github.com/kotru21/lessgo"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=kotru21&repo=lessgo&theme=dark&hide_border=true&area=true" align="right" width="42%"></a>
+<a href="https://github.com/kotru21/lessgo"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=kotru21&repo=lessgo&theme=dracula&hide_border=true&area=true" align="right" width="42%"></a>
 
-<a href="https://github.com/kotru21/kotikov"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=kotru21&repo=kotikov&theme=dark&hide_border=true&area=true" align="right" width="42%"></a>
+<a href="https://github.com/kotru21/kotikov"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=kotru21&repo=kotikov&theme=dracula&hide_border=true&area=true" align="right" width="42%"></a>
 
 <hr width="100%">
 <p align="center">
