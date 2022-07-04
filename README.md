@@ -1,8 +1,7 @@
 <h1 align="center">Hello there :D 👋</h1>
-
-![header](https://user-images.githubusercontent.com/88907641/177034655-bfd777b5-ebc9-4584-be49-1cd020037601.png)
-
-
+<a href="#">
+<img src="https://user-images.githubusercontent.com/88907641/177034655-bfd777b5-ebc9-4584-be49-1cd020037601.png">
+</a>
 
 <p align="center">
 <img src="https://activity-graph.herokuapp.com/graph?username=kotru21&theme=dracula&hide_border=true&area=true&bg_color=false" width="100%"> 
@@ -74,7 +73,7 @@ int main()
 <hr width="100%">
 
 <h1 align="center">Wanna contact me? </h1>
-<a href="vk.com/arsenij_kotikov">
+<a href="https://vk.com/arsenij_kotikov">
 <img src="https://user-images.githubusercontent.com/88907641/177144456-459b1fa4-0122-4577-b05c-bbe13a7f44a1.png" >
 </a>
 <a href="mailto::kotikovdev@gmail.com">
