@@ -36,17 +36,27 @@ int main()
 
 ```
 <hr />
+<a href="#">
 <img src="https://user-images.githubusercontent.com/88907641/176977557-c2d4d7bf-e882-49a0-aeae-ec069ed8e442.png" align="left" width="20%">
+</a>
+<a href="#">
 <img src="https://user-images.githubusercontent.com/88907641/176977648-4c691fde-25d8-4a7b-9faf-4a353c6e9a10.png" align="right" width="20%">
+</a>
 
 <p align="center">
+<a href="#">
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kotru21&theme=dracula&hide_border=true&area=true&layout=compact" width="48%"> 
+</a>
 </p>
 <p align="center">
+<a href="#">
 <img src="https://github-readme-stats.vercel.app/api?username=kotru21&stars,commits,prs,issues,contribs&theme=dracula&hide_border=true&area=true" width="48%">
+</a>
 </p>
 <p align="center">
+<a href="#">
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=kotru21&theme=dracula&hide_border=true&area=true" alt="github stats" width="48%">
+</a>
 </p>
 
 <hr>
@@ -82,7 +92,9 @@ int main()
 
 <hr width="100%">
 <p align="center">
+<a href="#">
 <img src="https://estruyf-github.azurewebsites.net/api/VisitorHit?user=kotru21&repo=kotikov&countColorcountColor&countColor=orange">
+</a>
 <a href="https://www.instagram.com/arsenij_kotikov/" target="_blank"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" ></a>
 <a href="https://twitter.com/arsenij_kotikov/" target="_blank"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter" ></a>
 </p>
