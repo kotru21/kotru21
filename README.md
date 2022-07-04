@@ -88,7 +88,7 @@ int main()
 <a href="https://vk.com/arsenij_kotikov">
 <img src="https://user-images.githubusercontent.com/88907641/177144456-459b1fa4-0122-4577-b05c-bbe13a7f44a1.png" >
 </a>
-<a href="mailto::kotikovdev@gmail.com">
+<a href="mailto:kotikovdev@gmail.com">
 <img src="https://user-images.githubusercontent.com/88907641/177144286-e23d4f6a-f46e-4f1f-a67e-f882c809d93e.png" >
 </a>
 
