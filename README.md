@@ -4,7 +4,9 @@
 </a>
 
 <p align="center">
+<a href="#">
 <img src="https://activity-graph.herokuapp.com/graph?username=kotru21&theme=dracula&hide_border=true&area=true&bg_color=false" width="100%"> 
+</a>
 </p>
 <hr />
 
