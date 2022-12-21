@@ -1,13 +1,19 @@
 <h1 align="center">Hello there :D 👋</h1>
 <a href="#">
-<img src="https://user-images.githubusercontent.com/88907641/177034655-bfd777b5-ebc9-4584-be49-1cd020037601.png">
+
+
+![GitHub-profile](https://user-images.githubusercontent.com/88907641/208996535-e18ce941-a2ce-4811-8ca6-4f19a7cc6d30.svg)
+
+
+
 </a>
+
 
 <!-- stats graph -->
 
 <p align="center">
 <a href="#">
-<img src="https://activity-graph.herokuapp.com/graph?username=kotru21&theme=dracula&hide_border=true&area=true&bg_color=false" width="100%"> 
+<img src="https://github-readme-activity-graph.cyclic.app/graph?username=kotru21&color=ffffff&point=ffffff&area_color=ffffff&line=CC0B1A&hide_border=true&area=true&bg_color=false" width="100%"> 
 </a>
 </p>
 <hr />
@@ -45,28 +51,35 @@ int main()
 
 <hr />
 <a href="#">
-<img src="https://user-images.githubusercontent.com/88907641/176977557-c2d4d7bf-e882-49a0-aeae-ec069ed8e442.png" align="left" width="20%">
+
+<img src="https://user-images.githubusercontent.com/88907641/208995676-36b09aa0-6121-4bb1-9646-88bde9e89666.svg" align="left" width="20%">
+
+
 </a>
 
 <a href="#">
-<img src="https://user-images.githubusercontent.com/88907641/176977648-4c691fde-25d8-4a7b-9faf-4a353c6e9a10.png" align="right" width="20%">
+
+
+
+
+<img src="https://user-images.githubusercontent.com/88907641/208995311-349c2128-850e-4e57-9786-797edda39319.svg" align="right" width="20%">
 </a>
 
 <p align="center">
 <a href="#">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kotru21&theme=dracula&hide_border=true&area=true&layout=compact" width="48%"> 
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kotru21&bg_color=ffffff&border_color=CC0B1A&title_color=CC0B1A&area=true&layout=compact" width="48%"> 
 </a>
 </p>
 
 <p align="center">
 <a href="#">
-<img src="https://github-readme-stats.vercel.app/api?username=kotru21&stars,commits,prs,issues,contribs&theme=dracula&hide_border=true&area=true" width="48%">
+<img src="https://github-readme-stats.vercel.app/api?username=kotru21&stars,commits,prs,issues,contribs&bg_color=ffffff&border_color=CC0B1A&title_color=CC0B1A&area=true&layout=compact" width="48%">
 </a>
 </p>
 
 <p align="center">
 <a href="#">
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=kotru21&theme=dracula&hide_border=true&area=true" alt="github stats" width="48%">
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=kotru21&bg_color=ffffff&border=CC0B1A&ring=CC0B1A&fire=CC0B1A&currStreakLabel=CC0B1A&area=true&layout=compact" alt="github stats" width="48%">
 </a>
 </p>
 
@@ -75,7 +88,7 @@ int main()
 <hr>
 <h1 align="center">Im currently working on: </h1>
 <p align="center">
-<a href="https://github.com/kotru21/kotikov"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=kotru21&repo=kotikov&theme=dracula&hide_border=true&area=true" width="48%"></a>
+<a href="https://github.com/kotru21/kotikov"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=kotru21&repo=kotikov&bg_color=ffffff&border_color=CC0B1A&title_color=CC0B1A&area=true&layout=compact" width="48%"></a>
 </p>
 
 <!-- Some of my repositories -->
@@ -83,26 +96,34 @@ int main()
 <hr width="100%"/>
 <h1 align="center">My other repos </h1>
 
-<a href="https://github.com/kotru21/PYRAMIDE-CPP"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=kotru21&repo=PYRAMIDE-CPP&theme=dracula&hide_border=true&area=true&cache_seconds=1800&show_owner=true" align="right" width="42%"></a>
+<a href="https://github.com/kotru21/PYRAMIDE-CPP"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=kotru21&repo=PYRAMIDE-CPP&bg_color=ffffff&border_color=CC0B1A&title_color=CC0B1A&area=true&layout=compact&cache_seconds=1800&show_owner=true" align="right" width="42%"></a>
 
-<img src="https://user-images.githubusercontent.com/88907641/177035093-73650027-6196-4a71-871b-81d58a4baa6f.png" align="left" width="42%">
-<a href="https://github.com/kotru21/kotru21"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=kotru21&repo=kotru21&theme=dracula&hide_border=true&area=true&cache_seconds=1800&show_owner=true" align="right" width="42%"></a>
 
-<a href="https://github.com/kotru21/count"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=kotru21&repo=count&theme=dracula&hide_border=true&area=true&cache_seconds=1800&show_owner=true" align="right" width="42%"></a>
 
-<a href="https://github.com/kotru21/lessgo"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=kotru21&repo=lessgo&theme=dracula&hide_border=true&area=true&cache_seconds=1800&show_owner=true" align="right" width="42%"></a>
+<img src="https://user-images.githubusercontent.com/88907641/209004553-5bb7afeb-ca9c-49ed-b63a-9d3679b852ff.png" align="left" width="42%">
+<a href="https://github.com/kotru21/kotru21"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=kotru21&repo=kotru21&bg_color=ffffff&border_color=CC0B1A&title_color=CC0B1A&area=true&layout=compact&cache_seconds=1800&show_owner=true" align="right" width="42%"></a>
 
-<a href="https://github.com/kotru21/kotikov"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=kotru21&repo=kotikov&theme=dracula&hide_border=true&area=true&cache_seconds=1800&show_owner=true" align="right" width="42%"></a>
+<a href="https://github.com/kotru21/count"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=kotru21&repo=count&bg_color=ffffff&border_color=CC0B1A&title_color=CC0B1A&area=true&layout=compact&cache_seconds=1800&show_owner=true" align="right" width="42%"></a>
+
+<a href="https://github.com/kotru21/lessgo"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=kotru21&repo=lessgo&bg_color=ffffff&border_color=CC0B1A&title_color=CC0B1A&area=true&layout=compact&cache_seconds=1800&show_owner=true" align="right" width="42%"></a>
+
+<a href="https://github.com/kotru21/kotikov"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=kotru21&repo=kotikov&bg_color=ffffff&border_color=CC0B1A&title_color=CC0B1A&area=true&layout=compact&cache_seconds=1800&show_owner=true" align="right" width="42%"></a>
 <hr width="100%">
 
 <!-- Some of my contacts -->
 
 <h1 align="center">Wanna contact me? </h1>
 <a href="https://vk.com/arsenij_kotikov">
-<img src="https://user-images.githubusercontent.com/88907641/177144456-459b1fa4-0122-4577-b05c-bbe13a7f44a1.png" >
+
+![GH-vk](https://user-images.githubusercontent.com/88907641/209006461-f4a62a9a-8c8b-4e77-9730-d3dcaf7c62c6.svg)
+
+
 </a>
 <a href="mailto:kotikovdev@gmail.com">
-<img src="https://user-images.githubusercontent.com/88907641/177144286-e23d4f6a-f46e-4f1f-a67e-f882c809d93e.png" >
+
+![GH-mail](https://user-images.githubusercontent.com/88907641/209008913-97ed3d9d-db55-4c56-8172-6f04ff76ae36.svg)
+
+
 </a>
 <hr width="100%">
 
