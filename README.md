@@ -1,13 +1,9 @@
 <h1 align="center">Hello there :D 👋</h1>
 <a href="#">
 
-
 ![GitHub-profile](https://user-images.githubusercontent.com/88907641/208996535-e18ce941-a2ce-4811-8ca6-4f19a7cc6d30.svg)
 
-
-
 </a>
-
 
 <!-- stats graph -->
 
@@ -49,25 +45,14 @@ int main()
 ```
 <!-- My GitHub stats -->
 
-
 ![GitHub](https://user-images.githubusercontent.com/88907641/209012364-306d4758-749e-4464-b9c3-c6b3f42035bf.png)
-
-
-
 
 <hr />
 <a href="#">
-
 <img src="https://user-images.githubusercontent.com/88907641/208995676-36b09aa0-6121-4bb1-9646-88bde9e89666.svg" align="left" width="20%">
-
-
 </a>
 
 <a href="#">
-
-
-
-
 <img src="https://user-images.githubusercontent.com/88907641/208995311-349c2128-850e-4e57-9786-797edda39319.svg" align="right" width="20%">
 </a>
 
