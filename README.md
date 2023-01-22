@@ -45,7 +45,8 @@ int main()
 ```
 <!-- My GitHub stats -->
 
-![GitHub](https://user-images.githubusercontent.com/88907641/209012364-306d4758-749e-4464-b9c3-c6b3f42035bf.png)
+![gh-profile](https://user-images.githubusercontent.com/88907641/213923183-7e82c2c8-6ecf-425b-9255-9453b18c2145.png)
+
 
 <hr />
 <a href="#">
