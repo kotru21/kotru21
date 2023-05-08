@@ -110,7 +110,7 @@ int main()
 <!-- Some of my contacts -->
 
 <h1 align="center">Wanna contact me? </h1>
-<a href="https://vk.com/arsenij_kotikov">
+<a href="https://vk.com/kotikovdev">
 
 ![GH-vk](https://user-images.githubusercontent.com/88907641/209006461-f4a62a9a-8c8b-4e77-9730-d3dcaf7c62c6.svg)
 
