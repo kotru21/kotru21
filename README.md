@@ -116,7 +116,7 @@ int main()
 
 
 </a>
-<a href="mailto:kotikovdev@gmail.com">
+<a href="mailto:mail@kotikov.is-a.dev">
 
 ![GH-mail](https://user-images.githubusercontent.com/88907641/209008913-97ed3d9d-db55-4c56-8172-6f04ff76ae36.svg)
 
