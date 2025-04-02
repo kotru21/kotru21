@@ -9,7 +9,7 @@
 
 <p align="center">
 <a href="#">
-<img src="https://github-readme-activity-graph.cyclic.app/graph?username=kotru21&color=ffffff&point=ffffff&area_color=ffffff&line=CC0B1A&hide_border=true&area=true&bg_color=false" width="100%"> 
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=kotru21&color=ffffff&point=ffffff&area_color=ffffff&line=CC0B1A&hide_border=true&area=true&bg_color=false" width="100%"> 
 </a>
 </p>
 
