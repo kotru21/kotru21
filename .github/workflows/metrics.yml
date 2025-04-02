@@ -28,10 +28,11 @@ jobs:
           template: classic
           base: header, activity, community, repositories, metadata
           config_display: large
+          config_octicon: yes
           config_padding: 0,8 + 11%
           config_timezone: Europe/Minsk
-          plugin_calendar: yes
-          plugin_calendar_limit: 1
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
           plugin_languages: yes
           plugin_languages_analysis_timeout: 15
           plugin_languages_analysis_timeout_repositories: 7.5
