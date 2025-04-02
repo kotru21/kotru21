@@ -23,32 +23,24 @@
 
 <!-- C++ code, meow -->
 
-```C++
+```JavaScript
 // Here is some info about me:D
-#include <iostream>
-using namespace std;
 
-class kotru
-{
-    string NowLearning[] {"C++", "Python"};
-    public:
-    string name = "Arsenij Kotikov";
-    string website = "https://kotikov.is-a.dev";
-    string languages[] {"JavaScript", "NodeJs", "HTML", "CSS", "Bootstrap", "PHP"};
-         void print() {
-         std::cout << "name" << name << endl;
-         std::cout << "website" << website  << endl;
-         std::cout << "languages" << languages[] << endl;
-         std::cout << "languages, learning" << NowLearning[] << endl;
-     }
-    
+const kotru = {
+  name: "Arsenij Kotikov",
+  website: "https://kotikov.is-a.dev",
+  languages: ["JavaScript", "NodeJs", "HTML", "CSS", "Bootstrap", "PHP"],
+  nowLearning: ["C++", "Python"],
+  
+  print: function() {
+    console.log("name:", this.name);
+    console.log("website:", this.website);
+    console.log("languages:", this.languages);
+    console.log("languages, learning:", this.nowLearning);
+  }
 };
 
-int main()
-{
-  kotru.print();
-}
-
+kotru.print();
 ```
 <!-- My GitHub stats -->
 
