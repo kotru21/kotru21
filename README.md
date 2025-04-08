@@ -1,9 +1,9 @@
 <h1 align="center">Hello there :D 👋</h1>
-<a href="#">
+<!-- <a href="#">
 
 ![GitHub-profile](https://user-images.githubusercontent.com/88907641/208996535-e18ce941-a2ce-4811-8ca6-4f19a7cc6d30.svg)
 
-</a>
+</a> -->
 
 <!-- stats graph -->
 
@@ -44,9 +44,9 @@ kotru.print();
 ```
 <!-- My GitHub stats -->
 
-![gh-profile](https://user-images.githubusercontent.com/88907641/213923183-7e82c2c8-6ecf-425b-9255-9453b18c2145.png)
+<!-- ![gh-profile](https://user-images.githubusercontent.com/88907641/213923183-7e82c2c8-6ecf-425b-9255-9453b18c2145.png) -->
 
-
+<!--
 <hr />
 <a href="#">
 <img src="https://user-images.githubusercontent.com/88907641/208995676-36b09aa0-6121-4bb1-9646-88bde9e89666.svg" align="left" width="20%">
@@ -74,6 +74,8 @@ kotru.print();
 </a>
 </p>
 
+<!--
+
 <hr>
 <p align="center"> You can find more information <a href="https://kotikov.pages.dev">here</a></p>
 <hr>
@@ -83,7 +85,7 @@ kotru.print();
 </p>
 
 <!-- Some of my repositories -->
-
+<!--
 <hr width="100%"/>
 <h1 align="center">My other repos </h1>
 
@@ -103,10 +105,9 @@ kotru.print();
 
 <!-- Some of my contacts -->
 
+<!--
 <h1 align="center">Wanna contact me? </h1>
 <a href="https://vk.com/kotikovdev">
-
-![GH-vk](https://user-images.githubusercontent.com/88907641/209006461-f4a62a9a-8c8b-4e77-9730-d3dcaf7c62c6.svg)
 
 
 </a>
@@ -119,7 +120,7 @@ kotru.print();
 <hr width="100%">
 
 <!-- footer -->
-
+<!--
 <p align="center">
 <a href="#">
     
