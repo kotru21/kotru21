@@ -7,12 +7,6 @@
 
 <!-- stats graph -->
 
-<p align="center">
-<a href="#">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=kotru21&color=ffffff&point=ffffff&area_color=ffffff&line=CC0B1A&hide_border=true&area=true&bg_color=false" width="100%"> 
-</a>
-</p>
-
 <hr />
 
 <p align="center">
@@ -21,27 +15,7 @@
 
 </p>
 
-<!-- C++ code, meow -->
 
-```JavaScript
-// Here is some info about me:D
-
-const kotru = {
-  name: "Arsenij Kotikov",
-  website: "https://kotikov.is-a.dev",
-  languages: ["JavaScript", "NodeJs", "HTML", "CSS", "Bootstrap", "PHP"],
-  nowLearning: ["C++", "Python"],
-  
-  print: function() {
-    console.log("name:", this.name);
-    console.log("website:", this.website);
-    console.log("languages:", this.languages);
-    console.log("languages, learning:", this.nowLearning);
-  }
-};
-
-kotru.print();
-```
 <!-- My GitHub stats -->
 
 <!-- ![gh-profile](https://user-images.githubusercontent.com/88907641/213923183-7e82c2c8-6ecf-425b-9255-9453b18c2145.png) -->
