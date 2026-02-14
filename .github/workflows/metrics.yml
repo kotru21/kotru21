@@ -1,9 +1,6 @@
-# Visit https://github.com/lowlighter/metrics#-documentation for full reference
 name: Metrics
 on:
-  # Schedule updates (each hour)
   schedule: [{cron: "0 * * * *"}]
-  # Lines below let you run workflow manually and on each commit
   workflow_dispatch:
   push: {branches: ["master", "main"]}
 jobs:
@@ -14,17 +11,8 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          # Your GitHub token
-          # The following scopes are required:
-          #  - public_access (default scope)
-          # The following additional scopes may be required:
-          #  - read:org      (for organization related metrics)
-          #  - read:user     (for user related data)
-          #  - read:packages (for some packages related data)
-          #  - repo          (optional, if you want to include private repositories)
           token: ${{ secrets.METRICS_TOKEN }}
 
-          # Options
           template: classic
           base: header, activity, community, repositories, metadata
           config_display: large
@@ -44,3 +32,23 @@ jobs:
           plugin_languages_recent_load: 300
           plugin_languages_sections: most-used
           plugin_languages_threshold: 0%
+          extras_css: |
+            h1, h2, h3 { color: #00ffb9 !important; }
+
+            .field svg { fill: #00ffb9 !important; }
+
+            :root {
+              --color-calendar-graph-day-L1-bg: #b3ffe8;
+              --color-calendar-graph-day-L2-bg: #4dffd9;
+              --color-calendar-graph-day-L3-bg: #00ffb9;
+              --color-calendar-graph-day-L4-bg: #00b382;
+              --color-calendar-graph-day-L1-border: rgba(0, 255, 185, 0.15);
+              --color-calendar-graph-day-L2-border: rgba(0, 255, 185, 0.15);
+              --color-calendar-graph-day-L3-border: rgba(0, 255, 185, 0.15);
+              --color-calendar-graph-day-L4-border: rgba(0, 255, 185, 0.15);
+            }
+
+            rect.day[fill="#9be9a8"], path[fill="#9be9a8"] { fill: #b3ffe8 !important; }
+            rect.day[fill="#40c463"], path[fill="#40c463"] { fill: #4dffd9 !important; }
+            rect.day[fill="#30a14e"], path[fill="#30a14e"] { fill: #00ffb9 !important; }
+            rect.day[fill="#216e39"], path[fill="#216e39"] { fill: #00b382 !important; }
