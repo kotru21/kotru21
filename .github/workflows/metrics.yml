@@ -1,3 +1,4 @@
+
 name: Metrics
 on:
   schedule: [{cron: "0 * * * *"}]
@@ -12,7 +13,6 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-
           template: classic
           base: header, activity, community, repositories, metadata
           config_display: large
@@ -25,7 +25,7 @@ jobs:
           plugin_languages_analysis_timeout: 15
           plugin_languages_analysis_timeout_repositories: 7.5
           plugin_languages_categories: markup, programming
-          plugin_languages_colors: github
+          plugin_languages_colors: "TypeScript:#00ffb9, JavaScript:#00d49a, HTML:#009e76, CSS:#5ec4a8, Rust:#007a5e, MDX:#d4f7ed"
           plugin_languages_limit: 6
           plugin_languages_recent_categories: markup, programming
           plugin_languages_recent_days: 14
@@ -34,7 +34,6 @@ jobs:
           plugin_languages_threshold: 0%
           extras_css: |
             h1, h2, h3 { color: #009e76 !important; }
-
             :root {
               --color-calendar-graph-day-L1-bg: #d4f7ed;
               --color-calendar-graph-day-L2-bg: #5ec4a8;
@@ -45,12 +44,10 @@ jobs:
               --color-calendar-graph-day-L3-border: rgba(0,255,185,0.08);
               --color-calendar-graph-day-L4-border: rgba(0,255,185,0.08);
             }
-
             path[fill="#9be9a8"] { fill: #d4f7ed !important; }
             path[fill="#40c463"] { fill: #5ec4a8 !important; }
             path[fill="#30a14e"] { fill: #00a87a !important; }
             path[fill="#216e39"] { fill: #00ffb9 !important; }
-
             rect[fill="#9be9a8"] { fill: #d4f7ed !important; }
             rect[fill="#40c463"] { fill: #5ec4a8 !important; }
             rect[fill="#30a14e"] { fill: #00a87a !important; }
