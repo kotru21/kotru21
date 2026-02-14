@@ -33,22 +33,19 @@ jobs:
           plugin_languages_sections: most-used
           plugin_languages_threshold: 0%
           extras_css: |
-            h1, h2, h3 { color: #00ffb9 !important; }
+            h1 { color: #00ffb9 !important; }
 
-            .field svg { fill: #00ffb9 !important; }
+            h2, h3 { color: #00a87a !important; }
+
 
             :root {
-              --color-calendar-graph-day-L1-bg: #b3ffe8;
-              --color-calendar-graph-day-L2-bg: #4dffd9;
-              --color-calendar-graph-day-L3-bg: #00ffb9;
-              --color-calendar-graph-day-L4-bg: #00b382;
-              --color-calendar-graph-day-L1-border: rgba(0, 255, 185, 0.15);
-              --color-calendar-graph-day-L2-border: rgba(0, 255, 185, 0.15);
-              --color-calendar-graph-day-L3-border: rgba(0, 255, 185, 0.15);
-              --color-calendar-graph-day-L4-border: rgba(0, 255, 185, 0.15);
+              --color-calendar-graph-day-L1-bg: #b2e8d9;
+              --color-calendar-graph-day-L2-bg: #40c4a8;
+              --color-calendar-graph-day-L3-bg: #00a87a;
+              --color-calendar-graph-day-L4-bg: #005e44;
             }
 
-            rect.day[fill="#9be9a8"], path[fill="#9be9a8"] { fill: #b3ffe8 !important; }
-            rect.day[fill="#40c463"], path[fill="#40c463"] { fill: #4dffd9 !important; }
-            rect.day[fill="#30a14e"], path[fill="#30a14e"] { fill: #00ffb9 !important; }
-            rect.day[fill="#216e39"], path[fill="#216e39"] { fill: #00b382 !important; }
+            [fill="#9be9a8"] { fill: #b2e8d9 !important; }
+            [fill="#40c463"] { fill: #40c4a8 !important; }
+            [fill="#30a14e"] { fill: #00a87a !important; }
+            [fill="#216e39"] { fill: #005e44 !important; }
