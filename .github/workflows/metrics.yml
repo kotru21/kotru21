@@ -178,3 +178,97 @@ jobs:
               rx: 0 !important;
               ry: 0 !important;
             }
+
+          extras_js: |
+            (function () {
+              const svg = document.querySelector("svg");
+              if (!svg) return;
+
+              /* ── 1. SVG dimensions ─────────────────────────────── */
+              const vb  = svg.viewBox.baseVal;
+              const W   = vb.width  || +svg.getAttribute("width")  || 480;
+              const H   = vb.height || +svg.getAttribute("height") || 900;
+
+              /* ── 2. Locate isocalendar via month-label text nodes ─
+                 The isocalendar renders "Jan", "Feb"... as SVG <text>.
+                 We collect their Y positions to find the section band. */
+              const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun",
+                              "Jul","Aug","Sep","Oct","Nov","Dec"];
+              const labels = [...svg.querySelectorAll("text")].filter(t =>
+                MONTHS.some(m => t.textContent.trim().startsWith(m))
+              );
+
+              let calTop = H * 0.54;
+              let calBot = H * 0.80;
+
+              if (labels.length >= 2) {
+                const ys = labels.map(t => {
+                  try { return t.getBBox().y; } catch(_) {
+                    return +t.getAttribute("y") || 0;
+                  }
+                });
+                calTop = Math.min(...ys) - 40;
+                calBot = Math.max(...ys) + 50;
+              }
+
+              /* Logo sits vertically centred beside the calendar band */
+              const SZ    = 36;
+              const logoY = calTop + (calBot - calTop) / 2 - SZ / 2;
+
+              /* Horizontal: hug the edges so the 3-D graph is untouched */
+              const leftX  = 8;
+              const rightX = W - SZ - 8;
+
+              /* ── 3. CSS float animations ─────────────────────────── */
+              const style = document.createElementNS(
+                "http://www.w3.org/2000/svg", "style");
+              style.textContent = `
+                @keyframes bhF1 {
+                  0%,100% { transform:translateY(0);   }
+                  50%     { transform:translateY(-8px); }
+                }
+                @keyframes bhF2 {
+                  0%,100% { transform:translateY(-4px); }
+                  50%     { transform:translateY(5px);  }
+                }
+                .bh-l { animation: bhF1 4.2s ease-in-out infinite; }
+                .bh-r { animation: bhF2 5.8s ease-in-out infinite 1.6s; }
+              `;
+              svg.prepend(style);
+
+              /* ── 4. TypeScript badge (left) ──────────────────────── */
+              const ts = document.createElementNS(
+                "http://www.w3.org/2000/svg", "g");
+              ts.setAttribute("class", "bh-l");
+              ts.setAttribute("transform", `translate(${leftX},${logoY})`);
+              ts.setAttribute("opacity", "0.42");
+              ts.innerHTML = `
+                <rect x="0" y="0" width="${SZ}" height="${SZ}" fill="#00ffb9"/>
+                <rect x="0" y="${SZ-5}" width="${SZ}" height="4" fill="#007a5e"/>
+                <text x="3" y="${SZ-9}"
+                  font-family="'Courier New',monospace"
+                  font-weight="900" font-size="16" fill="#0d1117"
+                  letter-spacing="-1">TS</text>
+              `;
+
+              /* ── 5. Rust badge (right) ───────────────────────────── */
+              const rs = document.createElementNS(
+                "http://www.w3.org/2000/svg", "g");
+              rs.setAttribute("class", "bh-r");
+              rs.setAttribute("transform", `translate(${rightX},${logoY})`);
+              rs.setAttribute("opacity", "0.38");
+              rs.innerHTML = `
+                <rect x="0" y="0" width="${SZ}" height="${SZ}"
+                  fill="none" stroke="#5ec4a8" stroke-width="1.5"/>
+                <rect x="0" y="0" width="${SZ}" height="5" fill="#5ec4a8"/>
+                <text x="3" y="${SZ-9}"
+                  font-family="'Courier New',monospace"
+                  font-weight="900" font-size="16" fill="#5ec4a8"
+                  letter-spacing="-1">RS</text>
+              `;
+
+              /* Insert behind the top-level elements */
+              const anchor = svg.lastElementChild;
+              svg.insertBefore(ts, anchor);
+              svg.insertBefore(rs, anchor);
+            })();
