@@ -11,77 +11,91 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.METRICS_TOKEN }}<!--citation:1-->
+          token: ${{ secrets.METRICS_TOKEN }}
           
-
+          # --- Базовые настройки ---
           template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: Europe/Minsk
           config_display: large
+          # Отступы нужны, чтобы "рамка" не обрезалась
           config_padding: 10, 10
+          config_octicon: yes
           
-
-          config_style: css-isolation
-          
-
+          # --- Плагины ---
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
           
           plugin_languages: yes
           plugin_languages_sections: most-used
           plugin_languages_details: lines, percentage
-
+          # Цвета для графиков
           plugin_languages_colors: "TypeScript:#00ffb9, JavaScript:#00d49a, HTML:#009e76, CSS:#5ec4a8, Rust:#007a5e, MDX:#d4f7ed"
           
           plugin_achievements: yes
           plugin_achievements_display: compact
           
-          # --- BAUHAUS STYLE CSS ---
           extras_css: |
+            /* 1. ГЛОБАЛЬНАЯ ГЕОМЕТРИЯ: Убираем все скругления */
             * { 
               border-radius: 0 !important; 
-              font-family: 'Arial', sans-serif !important;
+              font-family: 'Segoe UI', Helvetica, Arial, sans-serif !important;
             }
             
+            /* 2. ФОН И РАМКА */
+            /*  основной фон темный и добавляем жирная рамка вокруг всего изображения */
             svg { 
-              background-color: #111111 !important;
-              border: 4px solid #00ffb9; /* Жирная мятная рамка вокруг всего */
+              background-color: #101010 !important;
+              border: 4px solid #00ffb9;
             }
             
+            /* 3. ТИПОГРАФИКА */
+            /* Заголовки: прописные, на черном фоне с рамкой */
             h1, h2, h3 {
               color: #ffffff !important;
               text-transform: uppercase;
-              font-weight: 900 !important;
+              font-weight: 800 !important;
               letter-spacing: 1px;
-              background: #000; /* Фон под текстом заголовка */
+              background: #000;
               display: inline-block;
-              padding: 2px 8px;
+              padding: 4px 8px;
               border: 1px solid #00ffb9;
+              margin-bottom: 10px;
             }
+            /* Обычный текст */
+            .field, div, span, p { color: #e0e0e0 !important; }
+            .gray { color: #a0a0a0 !important; }
             
-            .field {
+            /* 4. БЛОКИ (КАРТОЧКИ) */
+            /* Эффект "парящих плит" с жесткой тенью */
+            section, .field {
               border: 1px solid #333;
               background: #1a1a1a;
-              margin-bottom: 8px;
+              margin-bottom: 12px;
               padding: 10px;
-              box-shadow: 4px 4px 0px #00ffb9; /* "Жесткая" тень - фишка стиля */
+              box-shadow: 6px 6px 0px #00ffb9; /* Бруталистская тень */
             }
             
+            /* 5. ИЗОМЕТРИЧЕСКИЙ КАЛЕНДАРЬ */
+            /* Делаем его более "техничным" */
             .isocalendar .day { 
-              shape-rendering: crispEdges; 
-              stroke: #111 !important; 
+              stroke: #1a1a1a !important; 
               stroke-width: 1px;
+              shape-rendering: crispEdges;
             }
-            .isocalendar .day.l1 { fill: #007a5e !important; }
+            /* Цвета активности */
+            .isocalendar .day.l1 { fill: #005c46 !important; }
             .isocalendar .day.l2 { fill: #009e76 !important; }
             .isocalendar .day.l3 { fill: #00d49a !important; }
             .isocalendar .day.l4 { fill: #00ffb9 !important; }
             
+            /* 6. ЯЗЫКИ И ПРОГРЕСС-БАРЫ */
             .progress-bar {
-              border: 1px solid #fff;
-              height: 12px !important;
-              background: #000 !important;
+              background-color: #333 !important;
+              border: 1px solid #555;
+              height: 14px !important;
+              margin-bottom: 5px;
             }
             
-            .stat, .stargazers { color: #fff !important; }
-            .field svg { color: #00ffb9; } /* Иконки */
+            /* Иконки в акцентный цвет */
+            .octicon { fill: #00ffb9 !important; }
