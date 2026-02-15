@@ -9,6 +9,21 @@ jobs:
     permissions:
       contents: write
     steps:
+
+      # ① Checkout — нужен доступ к .github/images/
+      - uses: actions/checkout@v4
+
+      # ② Resize 2k→160px + base64
+      - name: Prepare images
+        id: imgs
+        run: |
+          for i in 1 2 3; do
+            convert ".github/images/img${i}.png" \
+              -resize 160x160 -strip "/tmp/i${i}.png"
+            echo "i${i}=$(base64 -w0 /tmp/i${i}.png)" >> "$GITHUB_OUTPUT"
+          done
+
+      # ③ Metrics
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
@@ -16,7 +31,7 @@ jobs:
           base: header, activity, community, repositories, metadata
           config_display: large
           config_octicon: yes
-          config_padding: 0, 10 + 12%
+          config_padding: 0, 10 + 6%
           config_timezone: Europe/Minsk
 
           plugin_isocalendar: yes
@@ -40,13 +55,11 @@ jobs:
                Form follows function · Emerald Grid · 2025
             ════════════════════════════════════════════════════════ */
 
-            /* ── GLOBAL RHYTHM ─────────────────────────────────── */
             * {
               letter-spacing: 0.015em;
               box-sizing: border-box;
             }
 
-            /* ── H1 — IDENTITY BLOCK ────────────────────────────── */
             h1 {
               color: #ffffff !important;
               font-weight: 900 !important;
@@ -56,7 +69,6 @@ jobs:
               margin: 0 !important;
             }
 
-            /* ── H2 / H3 — BAUHAUS SECTION RULE ────────────────── */
             h2, h3 {
               color: #00ffb9 !important;
               text-transform: uppercase !important;
@@ -70,21 +82,18 @@ jobs:
               background: linear-gradient(90deg, rgba(0,255,185,0.07) 0%, transparent 60%) !important;
             }
 
-            /* ── HEADER — Bold bottom rule ──────────────────────── */
             header, .header {
               border-bottom: 3px solid #00ffb9 !important;
               padding-bottom: 12px !important;
               margin-bottom: 6px !important;
             }
 
-            /* ── SECTIONS — Mathematical dividers ───────────────── */
             section {
               border-top: 1px solid rgba(0, 255, 185, 0.22) !important;
               padding-top: 14px !important;
               margin-top: 4px !important;
             }
 
-            /* ── AVATAR — Square geometry, no rounding ──────────── */
             img.avatar, img[src*="avatar"], img[width="64"] {
               border-radius: 0 !important;
               border: 2px solid #009e76 !important;
@@ -92,7 +101,6 @@ jobs:
               outline-offset: 2px !important;
             }
 
-            /* ── PROGRESS / LANGUAGE BARS — Pure rectangles ─────── */
             progress, .progress-bar, .bar {
               border-radius: 0 !important;
             }
@@ -101,32 +109,27 @@ jobs:
               background: rgba(0, 255, 185, 0.08) !important;
             }
 
-            /* ── METRIC VALUES — Tabular, high-contrast ─────────── */
             strong, b {
               color: #00ffb9 !important;
               font-weight: 900 !important;
               font-variant-numeric: tabular-nums !important;
             }
 
-            /* ── SECONDARY TEXT — Muted grid tone ───────────────── */
             span, p, li, td {
               color: #c8ede6 !important;
             }
 
-            /* ── ICONS / OCTICONS ────────────────────────────────── */
             .octicon {
               fill: #5ec4a8 !important;
               vertical-align: middle !important;
             }
 
-            /* ── LINKS ───────────────────────────────────────────── */
             a {
               color: #00d49a !important;
               text-decoration: none !important;
               font-weight: 600 !important;
             }
 
-            /* ── TABLES — Bauhaus grid lines ─────────────────────── */
             table {
               border-collapse: collapse !important;
               width: 100% !important;
@@ -150,7 +153,6 @@ jobs:
               border-bottom: none !important;
             }
 
-            /* ── CALENDAR — Green spectrum ───────────────────────── */
             :root {
               --color-calendar-graph-day-L1-bg:     #d4f7ed;
               --color-calendar-graph-day-L2-bg:     #5ec4a8;
@@ -178,73 +180,51 @@ jobs:
 
           extras_js: |
             (function () {
-              const svg = document.querySelector("svg");
+              var svg = document.querySelector("svg");
               if (!svg) return;
 
-              /* ── SVG dimensions ── */
-              const vb = svg.viewBox.baseVal;
-              const W  = vb.width  || +svg.getAttribute("width")  || 480;
-              const H  = vb.height || +svg.getAttribute("height") || 900;
+              var vb = svg.viewBox.baseVal;
+              var W  = vb.width  || +svg.getAttribute("width")  || 480;
+              var H  = vb.height || +svg.getAttribute("height") || 900;
+              var SZ = 120;
+              var PAD = 20;
 
-              /* ── Find isocalendar Y band via month labels ── */
-              const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun",
-                              "Jul","Aug","Sep","Oct","Nov","Dec"];
-              const labels = [...svg.querySelectorAll("text")].filter(t =>
-                MONTHS.some(m => t.textContent.trim().startsWith(m))
-              );
-              let calTop = H * 0.52;
-              let calBot = H * 0.78;
-              if (labels.length >= 2) {
-                const ys = labels.map(t => {
-                  try { return t.getBBox().y; } catch(_) {
-                    return parseFloat(t.getAttribute("y")) || 0;
-                  }
-                });
-                calTop = Math.min(...ys) - 55;
-                calBot = Math.max(...ys) + 60;
+              /* ── Extend viewBox to make room at the bottom ── */
+              vb.height = H + SZ + PAD * 2;
+
+              /* ── Float animations ── */
+              var st = document.createElementNS("http://www.w3.org/2000/svg", "style");
+              st.textContent = "\
+                @keyframes fl1{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}\
+                @keyframes fl2{0%,100%{transform:translateY(-4px)}50%{transform:translateY(6px)}}\
+                @keyframes fl3{0%,100%{transform:translateY(2px)}50%{transform:translateY(-6px)}}\
+                .fi1{animation:fl1 5s ease-in-out infinite}\
+                .fi2{animation:fl2 6.4s ease-in-out infinite 1.2s}\
+                .fi3{animation:fl3 4.7s ease-in-out infinite 2.5s}\
+              ";
+              svg.prepend(st);
+
+              /* ── Base64 data injected at build time ── */
+              var imgs = [
+                "${{ steps.imgs.outputs.i1 }}",
+                "${{ steps.imgs.outputs.i2 }}",
+                "${{ steps.imgs.outputs.i3 }}"
+              ];
+              var cls = ["fi1", "fi2", "fi3"];
+              var gap = (W - 3 * SZ) / 4;
+              var y   = H + PAD;
+
+              for (var i = 0; i < 3; i++) {
+                if (!imgs[i] || imgs[i].length < 20) continue;
+                var g = document.createElementNS("http://www.w3.org/2000/svg", "g");
+                g.setAttribute("class", cls[i]);
+                g.setAttribute("transform",
+                  "translate(" + (gap * (i + 1) + SZ * i) + "," + y + ")");
+                var im = document.createElementNS("http://www.w3.org/2000/svg", "image");
+                im.setAttribute("href", "data:image/png;base64," + imgs[i]);
+                im.setAttribute("width",  SZ);
+                im.setAttribute("height", SZ);
+                g.appendChild(im);
+                svg.appendChild(g);
               }
-              const midY  = calTop + (calBot - calTop) / 2;
-              const SZ    = 110;
-
-              /* ── Float keyframes ── */
-              const style = document.createElementNS("http://www.w3.org/2000/svg","style");
-              style.textContent = `
-                @keyframes f1 { 0%,100%{transform:translateY(0px)} 50%{transform:translateY(-10px)} }
-                @keyframes f2 { 0%,100%{transform:translateY(-6px)} 50%{transform:translateY(7px)} }
-                @keyframes f3 { 0%,100%{transform:translateY(3px)} 50%{transform:translateY(-8px)} }
-                .gl1 { animation: f1 5.0s ease-in-out infinite; }
-                .gl2 { animation: f2 6.4s ease-in-out infinite 1.2s; }
-                .gl3 { animation: f3 4.7s ease-in-out infinite 2.5s; }
-              `;
-              svg.prepend(style);
-
-              /* ── Helper: create floating image group ── */
-              function makeImg(url, cls, x, y, size) {
-                const g = document.createElementNS("http://www.w3.org/2000/svg","g");
-                g.setAttribute("class", cls);
-                g.setAttribute("transform", `translate(${x},${y})`);
-                const img = document.createElementNS("http://www.w3.org/2000/svg","image");
-                img.setAttribute("href", url);
-                img.setAttribute("width",  size);
-                img.setAttribute("height", size);
-                img.setAttribute("style",  "mix-blend-mode:screen;opacity:0.82");
-                g.appendChild(img);
-                return g;
-              }
-
-              /* ── Coordinates ── */
-              const x1 = 4;
-              const y1 = midY - SZ * 0.65;
-
-              const x2 = W - SZ - 4;
-              const y2 = midY - SZ * 0.1;
-
-              const x3 = 14;
-              const y3 = midY + SZ * 0.5;
-
-              /* ── Append images ── */
-              const base = "https://raw.githubusercontent.com/kotru21/kotru21/main/.github/images";
-              svg.appendChild(makeImg(`${base}/img1.png`, "gl1", x1, y1, SZ));
-              svg.appendChild(makeImg(`${base}/img2.png`, "gl2", x2, y2, SZ));
-              svg.appendChild(makeImg(`${base}/img3.png`, "gl3", x3, y3, SZ));
             })();
