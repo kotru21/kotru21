@@ -12,10 +12,6 @@ jobs:
 
       - uses: actions/checkout@v4
 
-      - name: Install ImageMagick
-        run: sudo apt-get update -qq && sudo apt-get install -y -qq imagemagick
-
-      # ── Metrics (без картинок) ──
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
@@ -42,101 +38,61 @@ jobs:
           plugin_languages_threshold: 0%
 
           extras_css: |
-            * {
-              letter-spacing: 0.015em;
-              box-sizing: border-box;
-            }
+            * { letter-spacing: 0.015em; box-sizing: border-box; }
             h1 {
-              color: #ffffff !important;
-              font-weight: 900 !important;
-              font-size: 1.35em !important;
-              text-transform: uppercase !important;
-              letter-spacing: 0.08em !important;
-              margin: 0 !important;
+              color: #ffffff !important; font-weight: 900 !important;
+              font-size: 1.35em !important; text-transform: uppercase !important;
+              letter-spacing: 0.08em !important; margin: 0 !important;
             }
             h2, h3 {
-              color: #00ffb9 !important;
-              text-transform: uppercase !important;
-              letter-spacing: 0.2em !important;
-              font-weight: 900 !important;
-              font-size: 0.82em !important;
-              border-left: 4px solid #00ffb9 !important;
-              padding: 3px 0 3px 9px !important;
-              margin: 0 0 10px 0 !important;
+              color: #00ffb9 !important; text-transform: uppercase !important;
+              letter-spacing: 0.2em !important; font-weight: 900 !important;
+              font-size: 0.82em !important; border-left: 4px solid #00ffb9 !important;
+              padding: 3px 0 3px 9px !important; margin: 0 0 10px 0 !important;
               line-height: 1.5 !important;
               background: linear-gradient(90deg, rgba(0,255,185,0.07) 0%, transparent 60%) !important;
             }
             header, .header {
               border-bottom: 3px solid #00ffb9 !important;
-              padding-bottom: 12px !important;
-              margin-bottom: 6px !important;
+              padding-bottom: 12px !important; margin-bottom: 6px !important;
             }
             section {
-              border-top: 1px solid rgba(0, 255, 185, 0.22) !important;
-              padding-top: 14px !important;
-              margin-top: 4px !important;
+              border-top: 1px solid rgba(0,255,185,0.22) !important;
+              padding-top: 14px !important; margin-top: 4px !important;
             }
             img.avatar, img[src*="avatar"], img[width="64"] {
-              border-radius: 0 !important;
-              border: 2px solid #009e76 !important;
-              outline: 1px solid rgba(0, 255, 185, 0.35) !important;
-              outline-offset: 2px !important;
+              border-radius: 0 !important; border: 2px solid #009e76 !important;
+              outline: 1px solid rgba(0,255,185,0.35) !important; outline-offset: 2px !important;
             }
-            progress, .progress-bar, .bar {
-              border-radius: 0 !important;
-            }
+            progress, .progress-bar, .bar { border-radius: 0 !important; }
             .progress, div[class*="progress"] {
-              border-radius: 0 !important;
-              background: rgba(0, 255, 185, 0.08) !important;
+              border-radius: 0 !important; background: rgba(0,255,185,0.08) !important;
             }
             strong, b {
-              color: #00ffb9 !important;
-              font-weight: 900 !important;
+              color: #00ffb9 !important; font-weight: 900 !important;
               font-variant-numeric: tabular-nums !important;
             }
-            span, p, li, td {
-              color: #c8ede6 !important;
-            }
-            .octicon {
-              fill: #5ec4a8 !important;
-              vertical-align: middle !important;
-            }
-            a {
-              color: #00d49a !important;
-              text-decoration: none !important;
-              font-weight: 600 !important;
-            }
-            table {
-              border-collapse: collapse !important;
-              width: 100% !important;
-            }
+            span, p, li, td { color: #c8ede6 !important; }
+            .octicon { fill: #5ec4a8 !important; vertical-align: middle !important; }
+            a { color: #00d49a !important; text-decoration: none !important; font-weight: 600 !important; }
+            table { border-collapse: collapse !important; width: 100% !important; }
             th {
-              text-transform: uppercase !important;
-              letter-spacing: 0.12em !important;
-              font-size: 0.62em !important;
-              font-weight: 700 !important;
-              color: #5ec4a8 !important;
-              border-bottom: 2px solid #009e76 !important;
+              text-transform: uppercase !important; letter-spacing: 0.12em !important;
+              font-size: 0.62em !important; font-weight: 700 !important;
+              color: #5ec4a8 !important; border-bottom: 2px solid #009e76 !important;
               padding: 4px 6px !important;
             }
             td {
               border: none !important;
-              border-bottom: 1px solid rgba(0, 255, 185, 0.09) !important;
-              padding: 3px 6px !important;
-              vertical-align: middle !important;
+              border-bottom: 1px solid rgba(0,255,185,0.09) !important;
+              padding: 3px 6px !important; vertical-align: middle !important;
             }
-            tr:last-child td {
-              border-bottom: none !important;
-            }
+            tr:last-child td { border-bottom: none !important; }
             :root {
-              --color-calendar-graph-day-L1-bg:     #d4f7ed;
-              --color-calendar-graph-day-L2-bg:     #5ec4a8;
-              --color-calendar-graph-day-L3-bg:     #00a87a;
-              --color-calendar-graph-day-L4-bg:     #00ffb9;
-              --color-calendar-graph-day-L1-border: rgba(0, 255, 185, 0.08);
-              --color-calendar-graph-day-L2-border: rgba(0, 255, 185, 0.08);
-              --color-calendar-graph-day-L3-border: rgba(0, 255, 185, 0.08);
-              --color-calendar-graph-day-L4-border: rgba(0, 255, 185, 0.08);
+              --color-calendar-graph-day-L1-bg: #d4f7ed;
+              --color-calendar-graph-day-L2-bg: #5ec4a8;
+              --color-calendar-graph-day-L3-bg: #00a87a;
+              --color-calendar-graph-day-L4-bg: #00ffb9;
             }
             path[fill="#9be9a8"] { fill: #d4f7ed !important; }
             path[fill="#40c463"] { fill: #5ec4a8 !important; }
@@ -146,74 +102,138 @@ jobs:
             rect[fill="#40c463"] { fill: #5ec4a8 !important; }
             rect[fill="#30a14e"] { fill: #00a87a !important; }
             rect[fill="#216e39"] { fill: #00ffb9 !important; }
-            rect.ContributionCalendar-day {
-              rx: 0 !important;
-              ry: 0 !important;
-            }
+            rect.ContributionCalendar-day { rx: 0 !important; ry: 0 !important; }
 
-      # ── Пост-обработка: вшиваем картинки прямо в SVG ──
-      - name: Inject floating images
+      # ── Post-process: inject images directly into SVG file ──
+      - name: Inject images into SVG
         run: |
-          git pull --rebase
+          sudo apt-get update -qq && sudo apt-get install -y -qq imagemagick
+
+          git pull --rebase || true
+
+          echo "=== Debug: files ==="
+          ls -la github-metrics.svg
+          ls -la .github/workflows/images/
 
           for i in 1 2 3; do
             convert ".github/workflows/images/img${i}.png" \
-              -resize "100x100>" -strip "/tmp/i${i}.png"
+              -resize "48x48>" -strip -colors 128 "/tmp/i${i}.png"
+            echo "img${i} resized: $(wc -c < /tmp/i${i}.png) bytes"
           done
 
           python3 << 'PYEOF'
-          import base64, re
+          import base64, re, sys, os
+          import xml.etree.ElementTree as ET
 
-          with open("github-metrics.svg") as f:
+          SVG = "github-metrics.svg"
+          SZ  = 48
+          PAD = 15
+
+          # ── Read SVG ──
+          with open(SVG, "r", encoding="utf-8") as f:
               svg = f.read()
+          print(f"[1] Input SVG: {len(svg)} bytes")
 
-          imgs = []
+          # ── Validate input ──
+          try:
+              ET.fromstring(svg)
+              print("[2] Input XML valid ✓")
+          except ET.ParseError as e:
+              print(f"[2] Input XML ERROR: {e}")
+
+          # ── Load images as base64 ──
+          b64 = []
           for i in range(1, 4):
-              with open(f"/tmp/i{i}.png", "rb") as f:
-                  imgs.append(base64.b64encode(f.read()).decode())
+              p = f"/tmp/i{i}.png"
+              with open(p, "rb") as f:
+                  d = base64.b64encode(f.read()).decode("ascii")
+              b64.append(d)
+              print(f"[3] img{i}: {len(d)} base64 chars")
 
-          m = re.search(r'viewBox="([\d.]+)\s+([\d.]+)\s+([\d.]+)\s+([\d.]+)"', svg)
-          W, H = (float(m[3]), float(m[4])) if m else (480, 900)
+          # ── Parse root <svg> tag ──
+          root_m = re.search(r"<svg\b[^>]*>", svg)
+          if not root_m:
+              print("ERROR: no <svg> tag"); sys.exit(1)
+          root_tag = root_m.group()
 
-          SZ, PAD = 100, 20
-          newH = H + SZ + PAD * 2
+          # ── Get viewBox dimensions ──
+          vb_m = re.search(r'viewBox="([^"]+)"', root_tag)
+          if vb_m:
+              parts = vb_m.group(1).split()
+              W, H = float(parts[2]), float(parts[3])
+          else:
+              W, H = 480.0, 900.0
+          print(f"[4] viewBox W={W} H={H}")
 
-          svg = re.sub(
-              r'(viewBox="[\d.]+\s+[\d.]+\s+[\d.]+\s+)[\d.]+"',
-              f'\\1{newH}"', svg)
+          NEW_H = H + SZ + PAD * 2
 
-          hm = re.search(r'(<svg[^>]+)height="[\d.]+"', svg)
-          if hm:
-              svg = re.sub(r'(<svg[^>]+)height="[\d.]+"',
-                           f'\\1height="{newH}"', svg)
+          # ── Update ONLY the root <svg> tag ──
+          new_tag = root_tag
 
+          # bump viewBox last number
+          if vb_m:
+              old_vb = vb_m.group(1)
+              new_vb = f"{parts[0]} {parts[1]} {parts[2]} {NEW_H}"
+              new_tag = new_tag.replace(f'viewBox="{old_vb}"',
+                                       f'viewBox="{new_vb}"')
+
+          # bump height="..." if present
+          h_m = re.search(r'height="([\d.]+)"', new_tag)
+          if h_m:
+              new_tag = new_tag.replace(f'height="{h_m.group(1)}"',
+                                       f'height="{NEW_H}"')
+
+          svg = svg[:root_m.start()] + new_tag + svg[root_m.end():]
+          print(f"[5] viewBox updated to height={NEW_H}")
+
+          # ── Build image elements ──
           gap = (W - 3 * SZ) / 4
-          y = H + PAD
-          cls = ["fi1", "fi2", "fi3"]
+          y   = H + PAD
 
-          block  = '<style>'
-          block += '@keyframes fl1{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}'
-          block += '@keyframes fl2{0%,100%{transform:translateY(-4px)}50%{transform:translateY(6px)}}'
-          block += '@keyframes fl3{0%,100%{transform:translateY(2px)}50%{transform:translateY(-6px)}}'
-          block += '.fi1{animation:fl1 5s ease-in-out infinite}'
-          block += '.fi2{animation:fl2 6.4s ease-in-out infinite 1.2s}'
-          block += '.fi3{animation:fl3 4.7s ease-in-out infinite 2.5s}'
-          block += '</style>\n'
+          anim_css = (
+              "<defs><style>"
+              "@keyframes f1{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}"
+              "@keyframes f2{0%,100%{transform:translateY(-4px)}50%{transform:translateY(6px)}}"
+              "@keyframes f3{0%,100%{transform:translateY(2px)}50%{transform:translateY(-6px)}}"
+              ".a1{animation:f1 5s ease-in-out infinite}"
+              ".a2{animation:f2 6.4s ease-in-out infinite 1.2s}"
+              ".a3{animation:f3 4.7s ease-in-out infinite 2.5s}"
+              "</style></defs>\n"
+          )
 
+          imgs_xml = ""
           for i in range(3):
               x = gap * (i + 1) + SZ * i
-              block += f'<g class="{cls[i]}" transform="translate({x},{y})">'
-              block += f'<image href="data:image/png;base64,{imgs[i]}" width="{SZ}" height="{SZ}"/>'
-              block += '</g>\n'
+              imgs_xml += (
+                  f'<g class="a{i+1}" transform="translate({x},{y})">'
+                  f'<image width="{SZ}" height="{SZ}" '
+                  f'href="data:image/png;base64,{b64[i]}"/>'
+                  f'</g>\n'
+              )
 
-          svg = svg.replace('</svg>', block + '</svg>')
+          # ── Insert before last </svg> ──
+          close_idx = svg.rfind("</svg>")
+          if close_idx == -1:
+              print("ERROR: no </svg>"); sys.exit(1)
 
-          with open("github-metrics.svg", "w") as f:
+          svg = svg[:close_idx] + anim_css + imgs_xml + svg[close_idx:]
+
+          # ── Validate output ──
+          try:
+              ET.fromstring(svg)
+              print("[6] Output XML valid ✓")
+          except ET.ParseError as e:
+              print(f"[6] Output XML ERROR: {e}")
+              sys.exit(1)
+
+          # ── Write ──
+          with open(SVG, "w", encoding="utf-8") as f:
               f.write(svg)
+          print(f"[7] Output SVG: {len(svg)} bytes ✓")
           PYEOF
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add github-metrics.svg
-          git diff --cached --quiet || git commit -m "📊 metrics + images"
+          git diff --cached --quiet || git commit -m "📊 metrics + floating images"
           git push
