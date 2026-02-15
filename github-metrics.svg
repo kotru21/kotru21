@@ -1,20 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="1185" class="large">
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="1122" class="large">
     <defs>
         <style/>
     </defs>
     <style>@keyframes animation-gauge{0%{stroke-dasharray:0 329}}@keyframes animation-rainbow{0%,to{color:#7f00ff;fill:#7f00ff}14%{color:#a933ff;fill:#a933ff}29%{color:#007fff;fill:#007fff}43%{color:#00ff7f;fill:#00ff7f}57%{color:#ff0;fill:#ff0}71%{color:#ff7f00;fill:#ff7f00}86%{color:red;fill:red}}svg{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:14px;color:#777}svg.large .largeable{width:474px}svg.large .largeable&gt;.row{width:100%}svg.large .column.largeable,svg.large .largeable-inline-flex,svg.large .row.largeable{display:inline-flex}h1,h2,h3{margin:8px 0 2px;padding:0;color:#0366d6}h1{font-size:20px;font-weight:700}h2,h3{font-weight:400}h1 svg,h2 svg,h3 svg{fill:currentColor}h2{font-size:16px}h3{font-size:14px}section&gt;.field{margin-left:5px;margin-right:5px}.field{display:flex;align-items:center;margin-bottom:2px;white-space:nowrap}.field svg{margin:0 8px;fill:#959da5;flex-shrink:0}.row{display:flex;flex-wrap:wrap}.row section{flex:1 1 0}.column,footer{display:flex;flex-direction:column}.column{align-items:center}.center{justify-content:center}.horizontal-wrap{flex-wrap:wrap}.no-wrap{white-space:nowrap}#metrics-end,.fill-width{width:100%}.margin-bottom{margin-bottom:16px}.avatar{border-radius:50%;margin:0 6px}.calendar.field{margin:4px 0 4px 7px}.calendar .day{outline:1px solid rgba(27,31,35,.04);outline-offset:-1px}svg.bar{margin:4px 0}.field.language{margin:0 8px;flex-grow:0}footer{margin-top:8px;font-size:10px;font-style:italic;color:#666;text-align:right;justify-content:flex-end;padding:0 4px}svg.calendar{margin-left:13px;margin-top:4px}:root{--color-calendar-graph-day-bg:#ebedf0;--color-calendar-graph-day-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-bg:#9be9a8;--color-calendar-graph-day-L2-bg:#40c463;--color-calendar-graph-day-L3-bg:#30a14e;--color-calendar-graph-day-L4-bg:#216e39;--color-calendar-halloween-graph-day-L1-bg:#ffee4a;--color-calendar-halloween-graph-day-L2-bg:#ffc501;--color-calendar-halloween-graph-day-L3-bg:#fe9600;--color-calendar-halloween-graph-day-L4-bg:#03001c;--color-calendar-winter-graph-day-L1-bg:#0a3069;--color-calendar-winter-graph-day-L2-bg:#0969da;--color-calendar-winter-graph-day-L3-bg:#54aeff;--color-calendar-winter-graph-day-L4-bg:#b6e3ff;--color-calendar-graph-day-L4-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L3-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L2-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-border:rgba(27,31,35,0.06)}</style>
-    <style>/* ═══════════════════════════════════════════════════════
- B A U H A U S · G I T H U B M E T R I C S
- Form follows function · Emerald Grid · 2025
-════════════════════════════════════════════════════════ */
-
-/* ── GLOBAL RHYTHM ─────────────────────────────────── */
-* {
+    <style>* {
  letter-spacing: 0.015em;
  box-sizing: border-box;
 }
-
-/* ── H1 — IDENTITY BLOCK ────────────────────────────── */
 h1 {
  color: #ffffff !important;
  font-weight: 900 !important;
@@ -23,8 +15,6 @@ h1 {
  letter-spacing: 0.08em !important;
  margin: 0 !important;
 }
-
-/* ── H2 / H3 — BAUHAUS SECTION RULE ────────────────── */
 h2, h3 {
  color: #00ffb9 !important;
  text-transform: uppercase !important;
@@ -37,30 +27,22 @@ h2, h3 {
  line-height: 1.5 !important;
  background: linear-gradient(90deg, rgba(0,255,185,0.07) 0%, transparent 60%) !important;
 }
-
-/* ── HEADER — Bold bottom rule ──────────────────────── */
 header, .header {
  border-bottom: 3px solid #00ffb9 !important;
  padding-bottom: 12px !important;
  margin-bottom: 6px !important;
 }
-
-/* ── SECTIONS — Mathematical dividers ───────────────── */
 section {
  border-top: 1px solid rgba(0, 255, 185, 0.22) !important;
  padding-top: 14px !important;
  margin-top: 4px !important;
 }
-
-/* ── AVATAR — Square geometry, no rounding ──────────── */
 img.avatar, img[src*="avatar"], img[width="64"] {
  border-radius: 0 !important;
  border: 2px solid #009e76 !important;
  outline: 1px solid rgba(0, 255, 185, 0.35) !important;
  outline-offset: 2px !important;
 }
-
-/* ── PROGRESS / LANGUAGE BARS — Pure rectangles ─────── */
 progress, .progress-bar, .bar {
  border-radius: 0 !important;
 }
@@ -68,33 +50,23 @@ progress, .progress-bar, .bar {
  border-radius: 0 !important;
  background: rgba(0, 255, 185, 0.08) !important;
 }
-
-/* ── METRIC VALUES — Tabular, high-contrast ─────────── */
 strong, b {
  color: #00ffb9 !important;
  font-weight: 900 !important;
  font-variant-numeric: tabular-nums !important;
 }
-
-/* ── SECONDARY TEXT — Muted grid tone ───────────────── */
 span, p, li, td {
  color: #c8ede6 !important;
 }
-
-/* ── ICONS / OCTICONS ────────────────────────────────── */
 .octicon {
  fill: #5ec4a8 !important;
  vertical-align: middle !important;
 }
-
-/* ── LINKS ───────────────────────────────────────────── */
 a {
  color: #00d49a !important;
  text-decoration: none !important;
  font-weight: 600 !important;
 }
-
-/* ── TABLES — Bauhaus grid lines ─────────────────────── */
 table {
  border-collapse: collapse !important;
  width: 100% !important;
@@ -117,8 +89,6 @@ td {
 tr:last-child td {
  border-bottom: none !important;
 }
-
-/* ── CALENDAR — Green spectrum ───────────────────────── */
 :root {
  --color-calendar-graph-day-L1-bg: #d4f7ed;
  --color-calendar-graph-day-L2-bg: #5ec4a8;
@@ -129,7 +99,6 @@ tr:last-child td {
  --color-calendar-graph-day-L3-border: rgba(0, 255, 185, 0.08);
  --color-calendar-graph-day-L4-border: rgba(0, 255, 185, 0.08);
 }
-
 path[fill="#9be9a8"] { fill: #d4f7ed !important; }
 path[fill="#40c463"] { fill: #5ec4a8 !important; }
 path[fill="#30a14e"] { fill: #00a87a !important; }
@@ -138,7 +107,6 @@ rect[fill="#9be9a8"] { fill: #d4f7ed !important; }
 rect[fill="#40c463"] { fill: #5ec4a8 !important; }
 rect[fill="#30a14e"] { fill: #00a87a !important; }
 rect[fill="#216e39"] { fill: #00ffb9 !important; }
-
 rect.ContributionCalendar-day {
  rx: 0 !important;
  ry: 0 !important;
@@ -169,7 +137,7 @@ rect.ContributionCalendar-day {
                         <div class="field calendar">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 11" width="210" height="16">
                                 <g>
-                                    <rect class="day" x="0" y="0" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
+                                    <rect class="day" x="0" y="0" width="11" height="11" fill="#30a14e" rx="2" ry="2"/>
                                     <rect class="day" x="15" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
                                     <rect class="day" x="30" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
                                     <rect class="day" x="45" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
@@ -179,7 +147,7 @@ rect.ContributionCalendar-day {
                                     <rect class="day" x="105" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
                                     <rect class="day" x="120" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
                                     <rect class="day" x="135" y="0" width="11" height="11" fill="#40c463" rx="2" ry="2"/>
-                                    <rect class="day" x="150" y="0" width="11" height="11" fill="#30a14e" rx="2" ry="2"/>
+                                    <rect class="day" x="150" y="0" width="11" height="11" fill="#40c463" rx="2" ry="2"/>
                                     <rect class="day" x="165" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
                                     <rect class="day" x="180" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
                                     <rect class="day" x="195" y="0" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
@@ -208,7 +176,7 @@ rect.ContributionCalendar-day {
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/>
                             </svg>
-                            3109 Commits
+                            3114 Commits
                         </div>
                         <div class="field">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -2435,7 +2403,7 @@ rect.ContributionCalendar-day {
             </section>
             <footer>
                 <span>These metrics include private contributions</span>
-                <span>Last updated 15 Feb 2026, 16:40:22 (timezone Europe/Minsk) with lowlighter/metrics@3.34.0</span>
+                <span>Last updated 15 Feb 2026, 17:06:02 (timezone Europe/Minsk) with lowlighter/metrics@3.34.0</span>
             </footer>
         </div>
         <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
