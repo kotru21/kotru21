@@ -18,7 +18,6 @@ jobs:
           config_octicon: yes
           config_padding: 0, 10 + 12%
           config_timezone: Europe/Minsk
-          config_extras: yes
 
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
