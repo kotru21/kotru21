@@ -13,86 +13,96 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
 
-          # --- База (Оптимизация высоты) ---
+          # --- База ---
           template: classic
-          # Убрали 'community' и 'metadata' чтобы уменьшить высоту
           base: header, activity, repositories
           config_timezone: Europe/Minsk
           config_display: large
-          config_padding: 0, 5 
+          config_padding: 0, 10
           config_octicon: yes
           
-          # --- Плагин: Календарь ---
+          # --- Плагины ---
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
 
-          # --- Плагин: Языки ---
           plugin_languages: yes
           plugin_languages_sections: most-used
           plugin_languages_details: lines, percentage
-          # Акцентный цвет только тут
+          # Используем ваши цвета
           plugin_languages_colors: "TypeScript:#00ffb9, JavaScript:#00d49a, HTML:#009e76, CSS:#5ec4a8, Rust:#007a5e, MDX:#d4f7ed"
-          plugin_languages_limit: 6
+          plugin_languages_limit: 7
 
-          # --- Плагин: Ачивки (FIXED) ---
+          # Исправленные ачивки (компактные и безопасные)
           plugin_achievements: yes
           plugin_achievements_display: compact
-          plugin_achievements_secrets: no # Отключаем, чтобы избежать ошибок доступа
-          plugin_achievements_threshold: B # Показываем только значимые ачивки
-          plugin_achievements_limit: 4 # Ограничиваем кол-во, чтобы не раздувать высоту
+          plugin_achievements_secrets: no
+          plugin_achievements_threshold: C
 
-          # --- СТИЛЬ: SWISS GRID / MINIMAL BAUHAUS ---
+          # --- ДИЗАЙН: NEO-BAUHAUS CLEAN ---
           extras_css: |
-            /* 1. СБРОС СТИЛЕЙ: Полная геометрия */
+            /* 1. ГЕОМЕТРИЯ: Строгие углы везде */
             * { 
               border-radius: 0 !important; 
-              font-family: 'Segoe UI', Arial, sans-serif !important;
+              font-family: 'Arial Black', 'Arial', sans-serif !important;
             }
 
-            /* 2. ЦВЕТОВАЯ СХЕМА: Темная тема с тонкими линиями */
-            /* Фон всей картинки */
+            /* 2. ФОН: Темный холст */
             svg { 
               background-color: #0d1117 !important; 
             }
-            
-            /* 3. ЗАГОЛОВКИ: Минимализм */
+
+            /* 3. ЗАГОЛОВКИ (Эффект плаката) */
+            /* Черный текст на мятном фоне — яркий акцент */
             h1, h2, h3 {
-              color: #00ffb9 !important; /* Ваш мятный цвет */
+              background-color: #00ffb9 !important;
+              color: #0d1117 !important;
+              padding: 4px 8px !important;
+              display: inline-block !important;
               text-transform: uppercase;
-              letter-spacing: 2px;
-              font-size: 14px !important;
-              margin-bottom: 5px !important;
+              font-weight: 900 !important;
+              margin-bottom: 15px !important;
+              letter-spacing: 1px;
             }
+            
+            /* Цвет обычного текста */
+            .field, p, span { color: #c9d1d9 !important; }
 
-            /* 4. СЕТКА (GRID): Тонкие границы вместо теней */
-            section, .field {
+            /* 4. СТРУКТУРА (Вместо рамок вокруг блоков) */
+            .field {
+              border: none !important; /* Убираем рамки коробок */
               background: transparent !important;
-              border: 1px solid #30363d; /* Цвет границ GitHub Dimmed */
-              margin-bottom: 8px !important; /* Уменьшаем отступы */
-              padding: 8px !important;
-              box-shadow: none !important; /* УБРАЛИ ТЕНИ */
+              box-shadow: none !important;
+              padding: 0 !important;
+              margin-bottom: 20px !important;
+            }
+            
+            /* Добавляем жирную декоративную линию слева от контента */
+            /* Это создает сетку без лишних границ */
+            .content {
+              border-left: 4px solid #30363d;
+              padding-left: 15px !important;
             }
 
-            /* 5. КАЛЕНДАРЬ: Плоский вид */
-            .isocalendar .day { 
-              stroke: #0d1117 !important; /* Границы цвета фона */
-              stroke-width: 2px;
+            /* 5. ПРОГРЕСС-БАРЫ (Как цветные блоки) */
+            .progress-bar {
+              height: 14px !important; /* Толстые блоки */
+              background-color: #21262d !important;
+              border: none !important;
+              margin-bottom: 8px;
             }
+
+            /* 6. КАЛЕНДАРЬ */
+            .isocalendar .day { 
+              stroke: #0d1117 !important; 
+              stroke-width: 1px;
+              shape-rendering: crispEdges; /* Убирает сглаживание для четкости */
+            }
+            
             /* Яркие цвета активности */
             .isocalendar .day.l1 { fill: #0e4429 !important; }
             .isocalendar .day.l2 { fill: #006d32 !important; }
             .isocalendar .day.l3 { fill: #26a641 !important; }
             .isocalendar .day.l4 { fill: #00ffb9 !important; }
-
-            /* 6. ПРОГРЕСС-БАРЫ: Тонкие линии */
-            .progress-bar {
-              height: 6px !important; /* Делаем тоньше */
-              background-color: #21262d !important;
-              border: none !important;
-            }
-
-            /* Убираем лишний текст, чтобы было чище */
-            .field .content { font-size: 12px; color: #8b949e; }
             
-            /* Цвет иконок */
-            .octicon { fill: #e6edf3 !important; }
+            /* Иконки */
+            .octicon { fill: #00ffb9 !important; }
