@@ -243,7 +243,7 @@ jobs:
               const y3 = midY + SZ * 0.5;
 
               /* ── Append images ── */
-              const base = "https://raw.githubusercontent.com/${user}/${repo}/main/.github/images";
+              const base = "https://raw.githubusercontent.com/kotru21/kotru21/main/.github/images";
               svg.appendChild(makeImg(`${base}/img1.png`, "gl1", x1, y1, SZ));
               svg.appendChild(makeImg(`${base}/img2.png`, "gl2", x2, y2, SZ));
               svg.appendChild(makeImg(`${base}/img3.png`, "gl3", x3, y3, SZ));
