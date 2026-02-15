@@ -63,7 +63,7 @@ jobs:
               text-transform: uppercase !important;
               letter-spacing: 0.2em !important;
               font-weight: 900 !important;
-              font-size: 0.68em !important;
+              font-size: 0.82em !important;
               border-left: 4px solid #00ffb9 !important;
               padding: 3px 0 3px 9px !important;
               margin: 0 0 10px 0 !important;
