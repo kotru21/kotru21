@@ -104,136 +104,102 @@ jobs:
             rect[fill="#216e39"] { fill: #00ffb9 !important; }
             rect.ContributionCalendar-day { rx: 0 !important; ry: 0 !important; }
 
-      # ── Post-process: inject images directly into SVG file ──
       - name: Inject images into SVG
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq imagemagick
-
           git pull --rebase || true
-
-          echo "=== Debug: files ==="
-          ls -la github-metrics.svg
-          ls -la .github/workflows/images/
 
           for i in 1 2 3; do
             convert ".github/workflows/images/img${i}.png" \
-              -resize "48x48>" -strip -colors 128 "/tmp/i${i}.png"
-            echo "img${i} resized: $(wc -c < /tmp/i${i}.png) bytes"
+              -resize "80x80>" -strip -colors 128 "/tmp/i${i}.png"
+            echo "img${i}: $(wc -c < /tmp/i${i}.png) bytes"
           done
 
           python3 << 'PYEOF'
-          import base64, re, sys, os
+          import base64, re, sys
           import xml.etree.ElementTree as ET
 
-          SVG = "github-metrics.svg"
-          SZ  = 48
-          PAD = 15
+          SVG_FILE = "github-metrics.svg"
+          SZ  = 80
+          PAD = 20
 
-          # ── Read SVG ──
-          with open(SVG, "r", encoding="utf-8") as f:
+          with open(SVG_FILE, "r", encoding="utf-8") as f:
               svg = f.read()
-          print(f"[1] Input SVG: {len(svg)} bytes")
 
-          # ── Validate input ──
-          try:
-              ET.fromstring(svg)
-              print("[2] Input XML valid ✓")
-          except ET.ParseError as e:
-              print(f"[2] Input XML ERROR: {e}")
-
-          # ── Load images as base64 ──
+          # ── Load base64 images ──
           b64 = []
           for i in range(1, 4):
-              p = f"/tmp/i{i}.png"
-              with open(p, "rb") as f:
-                  d = base64.b64encode(f.read()).decode("ascii")
-              b64.append(d)
-              print(f"[3] img{i}: {len(d)} base64 chars")
+              with open(f"/tmp/i{i}.png", "rb") as f:
+                  b64.append(base64.b64encode(f.read()).decode("ascii"))
+              print(f"img{i}: {len(b64[-1])} b64 chars")
 
-          # ── Parse root <svg> tag ──
-          root_m = re.search(r"<svg\b[^>]*>", svg)
-          if not root_m:
-              print("ERROR: no <svg> tag"); sys.exit(1)
-          root_tag = root_m.group()
-
-          # ── Get viewBox dimensions ──
-          vb_m = re.search(r'viewBox="([^"]+)"', root_tag)
-          if vb_m:
-              parts = vb_m.group(1).split()
-              W, H = float(parts[2]), float(parts[3])
+          # ── Parse viewBox ──
+          vb = re.search(r'viewBox="([\d.\-]+)\s+([\d.\-]+)\s+([\d.]+)\s+([\d.]+)"', svg)
+          if vb:
+              vbx, vby = vb.group(1), vb.group(2)
+              W = float(vb.group(3))
+              H = float(vb.group(4))
           else:
-              W, H = 480.0, 900.0
-          print(f"[4] viewBox W={W} H={H}")
+              print("ERROR: no viewBox"); sys.exit(1)
 
-          NEW_H = H + SZ + PAD * 2
+          print(f"Original viewBox: {vbx} {vby} {W} {H}")
 
-          # ── Update ONLY the root <svg> tag ──
-          new_tag = root_tag
+          # ── New height ──
+          ROW_H = SZ + PAD * 2
+          NEW_H = H + ROW_H
 
-          # bump viewBox last number
-          if vb_m:
-              old_vb = vb_m.group(1)
-              new_vb = f"{parts[0]} {parts[1]} {parts[2]} {NEW_H}"
-              new_tag = new_tag.replace(f'viewBox="{old_vb}"',
-                                       f'viewBox="{new_vb}"')
+          # ── Replace viewBox height ──
+          old_vb_str = f'viewBox="{vbx} {vby} {W} {H}"'
+          new_vb_str = f'viewBox="{vbx} {vby} {W} {NEW_H}"'
+          svg = svg.replace(old_vb_str, new_vb_str, 1)
+          print(f"New viewBox: {vbx} {vby} {W} {NEW_H}")
 
-          # bump height="..." if present
-          h_m = re.search(r'height="([\d.]+)"', new_tag)
-          if h_m:
-              new_tag = new_tag.replace(f'height="{h_m.group(1)}"',
-                                       f'height="{NEW_H}"')
-
-          svg = svg[:root_m.start()] + new_tag + svg[root_m.end():]
-          print(f"[5] viewBox updated to height={NEW_H}")
-
-          # ── Build image elements ──
-          gap = (W - 3 * SZ) / 4
-          y   = H + PAD
-
-          anim_css = (
-              "<defs><style>"
-              "@keyframes f1{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}"
-              "@keyframes f2{0%,100%{transform:translateY(-4px)}50%{transform:translateY(6px)}}"
-              "@keyframes f3{0%,100%{transform:translateY(2px)}50%{transform:translateY(-6px)}}"
-              ".a1{animation:f1 5s ease-in-out infinite}"
-              ".a2{animation:f2 6.4s ease-in-out infinite 1.2s}"
-              ".a3{animation:f3 4.7s ease-in-out infinite 2.5s}"
-              "</style></defs>\n"
+          # ── Replace height attribute on root svg ──
+          svg = re.sub(
+              r'(<svg\b[^>]*\bheight=")[\d.]+(\")',
+              lambda m: m.group(1) + str(NEW_H) + m.group(2),
+              svg, count=1
           )
 
-          imgs_xml = ""
-          for i in range(3):
-              x = gap * (i + 1) + SZ * i
-              imgs_xml += (
-                  f'<g class="a{i+1}" transform="translate({x},{y})">'
-                  f'<image width="{SZ}" height="{SZ}" '
-                  f'href="data:image/png;base64,{b64[i]}"/>'
-                  f'</g>\n'
+          # ── Calculate positions: 3 images centered in a row ──
+          gap = (W - 3 * SZ) / 4
+          y = H + PAD
+
+          x1 = gap
+          x2 = gap * 2 + SZ
+          x3 = gap * 3 + SZ * 2
+
+          print(f"Positions: ({x1},{y}) ({x2},{y}) ({x3},{y})")
+
+          # ── Build SVG fragment (no animations, just static images) ──
+          fragment = ""
+          for idx, (x, data) in enumerate(zip([x1, x2, x3], b64)):
+              fragment += (
+                  f'<image x="{x}" y="{y}" '
+                  f'width="{SZ}" height="{SZ}" '
+                  f'href="data:image/png;base64,{data}" />\n'
               )
 
-          # ── Insert before last </svg> ──
+          # ── Insert before </svg> ──
           close_idx = svg.rfind("</svg>")
           if close_idx == -1:
               print("ERROR: no </svg>"); sys.exit(1)
+          svg = svg[:close_idx] + fragment + svg[close_idx:]
 
-          svg = svg[:close_idx] + anim_css + imgs_xml + svg[close_idx:]
-
-          # ── Validate output ──
+          # ── Validate XML ──
           try:
               ET.fromstring(svg)
-              print("[6] Output XML valid ✓")
+              print("Output XML valid ✓")
           except ET.ParseError as e:
-              print(f"[6] Output XML ERROR: {e}")
-              sys.exit(1)
+              print(f"Output XML ERROR: {e}"); sys.exit(1)
 
-          # ── Write ──
-          with open(SVG, "w", encoding="utf-8") as f:
+          with open(SVG_FILE, "w", encoding="utf-8") as f:
               f.write(svg)
-          print(f"[7] Output SVG: {len(svg)} bytes ✓")
+          print(f"Done: {len(svg)} bytes")
           PYEOF
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add github-metrics.svg
-          git diff --cached --quiet || git commit -m "📊 metrics + floating images"
+          git diff --cached --quiet || git commit -m "📊 metrics + images"
           git push
