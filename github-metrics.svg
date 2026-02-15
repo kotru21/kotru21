@@ -1,61 +1,74 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="793" class="large">
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="1167" class="large">
     <defs>
         <style/>
     </defs>
     <style>@keyframes animation-gauge{0%{stroke-dasharray:0 329}}@keyframes animation-rainbow{0%,to{color:#7f00ff;fill:#7f00ff}14%{color:#a933ff;fill:#a933ff}29%{color:#007fff;fill:#007fff}43%{color:#00ff7f;fill:#00ff7f}57%{color:#ff0;fill:#ff0}71%{color:#ff7f00;fill:#ff7f00}86%{color:red;fill:red}}svg{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:14px;color:#777}svg.large .largeable{width:474px}svg.large .largeable&gt;.row{width:100%}svg.large .column.largeable,svg.large .largeable-inline-flex,svg.large .row.largeable{display:inline-flex}svg.large .largeable-flex-wrap{display:flex;flex-wrap:wrap}h1,h2,h3{margin:8px 0 2px;padding:0;color:#0366d6}h1{font-size:20px;font-weight:700}h2,h3{font-weight:400}h1 svg,h2 svg,h3 svg{fill:currentColor}h2{font-size:16px}h3{font-size:14px}section&gt;.field{margin-left:5px;margin-right:5px}.field{display:flex;align-items:center;margin-bottom:2px;white-space:nowrap}.field svg{margin:0 8px;fill:#959da5;flex-shrink:0}.field.error{color:#cb2431}.field.error svg{fill:#cb2431}.row{display:flex;flex-wrap:wrap}.row section{flex:1 1 0}.column{display:flex;flex-direction:column;align-items:center}#metrics-end,.fill-width{width:100%}.margin-bottom{margin-bottom:16px}.avatar{border-radius:50%;margin:0 6px}.calendar.field{margin:4px 0 4px 7px}.calendar .day{outline:1px solid rgba(27,31,35,.04);outline-offset:-1px}svg.bar{margin:4px 0}.field.language{margin:0 8px;flex-grow:0}.field.language.details{display:flex;justify-content:space-between}.field.language.details small,.field.license.details small{display:flex;justify-content:space-between;color:#666;text-align:right}.field.language.details small&gt;*,.field.language.details&gt;*{flex:1 1 0}.field.language.details small&gt;:not(:last-child){margin-right:6px}svg.calendar{margin-left:13px;margin-top:4px}.field.license.details{display:flex;justify-content:space-between}:root{--color-calendar-graph-day-bg:#ebedf0;--color-calendar-graph-day-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-bg:#9be9a8;--color-calendar-graph-day-L2-bg:#40c463;--color-calendar-graph-day-L3-bg:#30a14e;--color-calendar-graph-day-L4-bg:#216e39;--color-calendar-halloween-graph-day-L1-bg:#ffee4a;--color-calendar-halloween-graph-day-L2-bg:#ffc501;--color-calendar-halloween-graph-day-L3-bg:#fe9600;--color-calendar-halloween-graph-day-L4-bg:#03001c;--color-calendar-winter-graph-day-L1-bg:#0a3069;--color-calendar-winter-graph-day-L2-bg:#0969da;--color-calendar-winter-graph-day-L3-bg:#54aeff;--color-calendar-winter-graph-day-L4-bg:#b6e3ff;--color-calendar-graph-day-L4-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L3-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L2-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-border:rgba(27,31,35,0.06)}</style>
-    <style>/* 1. СБРОС СТИЛЕЙ: Полная геометрия */
+    <style>/* 1. ГЕОМЕТРИЯ: Строгие углы везде */
 * { 
  border-radius: 0 !important; 
- font-family: 'Segoe UI', Arial, sans-serif !important;
+ font-family: 'Arial Black', 'Arial', sans-serif !important;
 }
 
-/* 2. ЦВЕТОВАЯ СХЕМА: Темная тема с тонкими линиями */
-/* Фон всей картинки */
+/* 2. ФОН: Темный холст */
 svg { 
  background-color: #0d1117 !important; 
 }
 
-/* 3. ЗАГОЛОВКИ: Минимализм */
+/* 3. ЗАГОЛОВКИ (Эффект плаката) */
+/* Черный текст на мятном фоне — яркий акцент */
 h1, h2, h3 {
- color: #00ffb9 !important; /bin /bin.usr-is-merged /boot /dev /etc /home /imagegeneration /lib /lib.usr-is-merged /lib32 /lib64 /lost+found /media /mnt /opt /proc /root /run /sbin /sbin.usr-is-merged /snap /srv /swapfile /sys /tmp /usr /var Ваш мятный цвет */
+ background-color: #00ffb9 !important;
+ color: #0d1117 !important;
+ padding: 4px 8px !important;
+ display: inline-block !important;
  text-transform: uppercase;
- letter-spacing: 2px;
- font-size: 14px !important;
- margin-bottom: 5px !important;
+ font-weight: 900 !important;
+ margin-bottom: 15px !important;
+ letter-spacing: 1px;
 }
 
-/* 4. СЕТКА (GRID): Тонкие границы вместо теней */
-section, .field {
+/* Цвет обычного текста */
+.field, p, span { color: #c9d1d9 !important; }
+
+/* 4. СТРУКТУРА (Вместо рамок вокруг блоков) */
+.field {
+ border: none !important; /bin /bin.usr-is-merged /boot /dev /etc /home /imagegeneration /lib /lib.usr-is-merged /lib32 /lib64 /lost+found /media /mnt /opt /proc /root /run /sbin /sbin.usr-is-merged /snap /srv /swapfile /sys /tmp /usr /var Убираем рамки коробок */
  background: transparent !important;
- border: 1px solid #30363d; /bin /bin.usr-is-merged /boot /dev /etc /home /imagegeneration /lib /lib.usr-is-merged /lib32 /lib64 /lost+found /media /mnt /opt /proc /root /run /sbin /sbin.usr-is-merged /snap /srv /swapfile /sys /tmp /usr /var Цвет границ GitHub Dimmed */
- margin-bottom: 8px !important; /bin /bin.usr-is-merged /boot /dev /etc /home /imagegeneration /lib /lib.usr-is-merged /lib32 /lib64 /lost+found /media /mnt /opt /proc /root /run /sbin /sbin.usr-is-merged /snap /srv /swapfile /sys /tmp /usr /var Уменьшаем отступы */
- padding: 8px !important;
- box-shadow: none !important; /bin /bin.usr-is-merged /boot /dev /etc /home /imagegeneration /lib /lib.usr-is-merged /lib32 /lib64 /lost+found /media /mnt /opt /proc /root /run /sbin /sbin.usr-is-merged /snap /srv /swapfile /sys /tmp /usr /var УБРАЛИ ТЕНИ */
+ box-shadow: none !important;
+ padding: 0 !important;
+ margin-bottom: 20px !important;
 }
 
-/* 5. КАЛЕНДАРЬ: Плоский вид */
-.isocalendar .day { 
- stroke: #0d1117 !important; /bin /bin.usr-is-merged /boot /dev /etc /home /imagegeneration /lib /lib.usr-is-merged /lib32 /lib64 /lost+found /media /mnt /opt /proc /root /run /sbin /sbin.usr-is-merged /snap /srv /swapfile /sys /tmp /usr /var Границы цвета фона */
- stroke-width: 2px;
+/* Добавляем жирную декоративную линию слева от контента */
+/* Это создает сетку без лишних границ */
+.content {
+ border-left: 4px solid #30363d;
+ padding-left: 15px !important;
 }
+
+/* 5. ПРОГРЕСС-БАРЫ (Как цветные блоки) */
+.progress-bar {
+ height: 14px !important; /bin /bin.usr-is-merged /boot /dev /etc /home /imagegeneration /lib /lib.usr-is-merged /lib32 /lib64 /lost+found /media /mnt /opt /proc /root /run /sbin /sbin.usr-is-merged /snap /srv /swapfile /sys /tmp /usr /var Толстые блоки */
+ background-color: #21262d !important;
+ border: none !important;
+ margin-bottom: 8px;
+}
+
+/* 6. КАЛЕНДАРЬ */
+.isocalendar .day { 
+ stroke: #0d1117 !important; 
+ stroke-width: 1px;
+ shape-rendering: crispEdges; /bin /bin.usr-is-merged /boot /dev /etc /home /imagegeneration /lib /lib.usr-is-merged /lib32 /lib64 /lost+found /media /mnt /opt /proc /root /run /sbin /sbin.usr-is-merged /snap /srv /swapfile /sys /tmp /usr /var Убирает сглаживание для четкости */
+}
+
 /* Яркие цвета активности */
 .isocalendar .day.l1 { fill: #0e4429 !important; }
 .isocalendar .day.l2 { fill: #006d32 !important; }
 .isocalendar .day.l3 { fill: #26a641 !important; }
 .isocalendar .day.l4 { fill: #00ffb9 !important; }
 
-/* 6. ПРОГРЕСС-БАРЫ: Тонкие линии */
-.progress-bar {
- height: 6px !important; /bin /bin.usr-is-merged /boot /dev /etc /home /imagegeneration /lib /lib.usr-is-merged /lib32 /lib64 /lost+found /media /mnt /opt /proc /root /run /sbin /sbin.usr-is-merged /snap /srv /swapfile /sys /tmp /usr /var Делаем тоньше */
- background-color: #21262d !important;
- border: none !important;
-}
-
-/* Убираем лишний текст, чтобы было чище */
-.field .content { font-size: 12px; color: #8b949e; }
-
-/* Цвет иконок */
-.octicon { fill: #e6edf3 !important; }</style>
+/* Иконки */
+.octicon { fill: #00ffb9 !important; }</style>
     <foreignObject x="0" y="0" width="100%" height="100%">
         <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" class="items-wrapper">
             <section>
@@ -95,7 +108,7 @@ section, .field {
                                     <rect class="day" x="150" y="0" width="11" height="11" fill="#30a14e" rx="2" ry="2"/>
                                     <rect class="day" x="165" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
                                     <rect class="day" x="180" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
-                                    <rect class="day" x="195" y="0" width="11" height="11" fill="#40c463" rx="2" ry="2"/>
+                                    <rect class="day" x="195" y="0" width="11" height="11" fill="#30a14e" rx="2" ry="2"/>
                                 </g>
                             </svg>
                         </div>
@@ -232,12 +245,13 @@ section, .field {
                         <rect x="0" y="0" width="920" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="446.8401823877722" height="8" fill="#00ffb9"/>
-                    <rect mask="url(#languages-bar)" x="446.8401823877722" y="0" width="303.8105996191725" height="8" fill="#00d49a"/>
-                    <rect mask="url(#languages-bar)" x="750.6507820069446" y="0" width="117.39875968789555" height="8" fill="#009e76"/>
-                    <rect mask="url(#languages-bar)" x="868.0495416948402" y="0" width="38.674836351472884" height="8" fill="#5ec4a8"/>
-                    <rect mask="url(#languages-bar)" x="906.7243780463131" y="0" width="7.507993694647004" height="8" fill="#007a5e"/>
-                    <rect mask="url(#languages-bar)" x="914.23237174096" y="0" width="5.767628259039871" height="8" fill="#d4f7ed"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="445.3972164423688" height="8" fill="#00ffb9"/>
+                    <rect mask="url(#languages-bar)" x="445.3972164423688" y="0" width="302.82951428624557" height="8" fill="#00d49a"/>
+                    <rect mask="url(#languages-bar)" x="748.2267307286144" y="0" width="117.01964782880313" height="8" fill="#009e76"/>
+                    <rect mask="url(#languages-bar)" x="865.2463785574175" y="0" width="38.54994500553123" height="8" fill="#5ec4a8"/>
+                    <rect mask="url(#languages-bar)" x="903.7963235629487" y="0" width="7.48374838357899" height="8" fill="#007a5e"/>
+                    <rect mask="url(#languages-bar)" x="911.2800719465276" y="0" width="5.749003051434171" height="8" fill="#d4f7ed"/>
+                    <rect mask="url(#languages-bar)" x="917.0290749979617" y="0" width="2.9709250020381566" height="8" fill="#336790"/>
                 </svg>
                 <div class="row fill-width">
                     <section>
@@ -249,7 +263,7 @@ section, .field {
                                 TypeScript
                             </div>
                             <small>
-                                <div>48.57%</div>
+                                <div>48.41%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -260,7 +274,7 @@ section, .field {
                                 Rust
                             </div>
                             <small>
-                                <div>0.82%</div>
+                                <div>0.81%</div>
                             </small>
                         </div>
                     </section>
@@ -273,7 +287,7 @@ section, .field {
                                 JavaScript
                             </div>
                             <small>
-                                <div>33.02%</div>
+                                <div>32.92%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -284,7 +298,7 @@ section, .field {
                                 MDX
                             </div>
                             <small>
-                                <div>0.63%</div>
+                                <div>0.62%</div>
                             </small>
                         </div>
                     </section>
@@ -297,7 +311,18 @@ section, .field {
                                 HTML
                             </div>
                             <small>
-                                <div>12.76%</div>
+                                <div>12.72%</div>
+                            </small>
+                        </div>
+                        <div class="field language details">
+                            <div class="field">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                    <path fill="#336790" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                                </svg>
+                                PLpgSQL
+                            </div>
+                            <small>
+                                <div>0.32%</div>
                             </small>
                         </div>
                     </section>
@@ -310,7 +335,7 @@ section, .field {
                                 CSS
                             </div>
                             <small>
-                                <div>4.2%</div>
+                                <div>4.19%</div>
                             </small>
                         </div>
                     </section>
