@@ -18,8 +18,8 @@ jobs:
           base: header, activity, repositories
           config_timezone: Europe/Minsk
           config_display: large
-          # Увеличили паддинг для "воздуха" вокруг
-          config_padding: 10, 10
+          # Минимальные отступы по краям
+          config_padding: 5, 5
           config_octicon: yes
           
           # --- Плагины ---
@@ -29,7 +29,7 @@ jobs:
           plugin_languages: yes
           plugin_languages_sections: most-used
           plugin_languages_details: lines, percentage
-          # Цвета (используем ваши, но CSS их переопределит для стиля)
+          # Цвета не важны, мы их перекрасим в CSS для единообразия
           plugin_languages_colors: "TypeScript:#00ffb9, JavaScript:#00d49a, HTML:#009e76, CSS:#5ec4a8, Rust:#007a5e, MDX:#d4f7ed"
           plugin_languages_limit: 7
 
@@ -38,87 +38,79 @@ jobs:
           plugin_achievements_secrets: no
           plugin_achievements_threshold: C
 
-          # --- ДИЗАЙН: BAUHAUS GRID SYSTEM ---
+          # --- ДИЗАЙН: TIGHT BAUHAUS BLOCK ---
           extras_css: |
-            /* 1. ГЕОМЕТРИЯ И ШРИФТЫ */
+            /* 1. ГЛОБАЛЬНЫЙ СБРОС */
             * { 
               border-radius: 0 !important; 
-              font-family: 'Segoe UI', Arial, sans-serif !important;
+              font-family: 'Arial Black', 'Segoe UI', sans-serif !important;
             }
 
-            /* 2. ФОН */
-            svg { 
-              background-color: #0d1117 !important; /* Темный фон GitHub */
-            }
+            /* Фон всей картинки - Почти черный */
+            svg { background-color: #050505 !important; }
 
-            /* 3. ЗАГОЛОВКИ (ТЕМНЫЙ ТЕКСТ НА МЯТНОМ) */
-            h1, h2, h3 {
-              background-color: #00ffb9 !important; /* Мятная плашка */
-              color: #0d1117 !important;            /* Темный текст (цвет фона) */
-              padding: 5px 10px !important;
+            /* 2. ЗАГОЛОВКИ (FIXED) */
+            /* Применяем стиль ко всем возможным контейнерам заголовков */
+            .header h2, .header .title, h1, h2, h3 {
+              background-color: #00ffb9 !important; /* МЯТНЫЙ ФОН */
+              color: #000000 !important;            /* ЧЕРНЫЙ ТЕКСТ */
+              padding: 4px 10px !important;
               display: inline-block !important;
+              font-weight: 900 !important;
               text-transform: uppercase;
-              font-weight: 800 !important;
-              margin: 0 0 10px 0 !important;
-              font-size: 14px !important;
-              letter-spacing: 1px;
-              /* Выравнивание заголовка по левому краю вместе с блоком */
-              min-width: 150px; 
-              text-align: center;
-            }
-
-            /* 4. ИКОНКИ (BAUHAUS STYLE) */
-            /* Делаем иконки черными внутри мятного квадрата */
-            .field svg.octicon {
-              background-color: #00ffb9 !important;
-              fill: #0d1117 !important;
-              padding: 4px;
-              width: 24px !important; 
-              height: 24px !important;
-              /* Убираем лишние отступы */
-              margin-right: 10px;
-            }
-
-            /* 5. СТРУКТУРА И ПОЗИЦИОНИРОВАНИЕ (УБИРАЕМ ХАОС) */
-            
-            /* Контейнер каждого блока */
-            .field {
-              border: none !important;
-              background: transparent !important;
-              box-shadow: none !important;
-              padding: 15px 0 !important; /* Вертикальные отступы */
+              font-size: 16px !important;
+              letter-spacing: -0.5px;
               margin: 0 !important;
-              /* Горизонтальная линия-разделитель снизу */
-              border-bottom: 2px solid #21262d !important; 
-            }
-
-            /* Жирная линия слева для всего контента (Ось выравнивания) */
-            .content {
-              border-left: 5px solid #00ffb9; /* Ось цвета заголовков */
-              padding-left: 20px !important;
-              margin-left: 5px;
-            }
-
-            /* Текст описания */
-            .field .content div, p, span { 
-              color: #c9d1d9 !important; 
-              font-size: 13px;
-            }
-
-            /* 6. ПРОГРЕСС-БАРЫ (ЦВЕТНЫЕ БЛОКИ) */
-            .progress-bar {
-              height: 16px !important;
-              background-color: #21262d !important;
+              width: fit-content !important;
               border: none !important;
-              margin-bottom: 10px;
+              text-decoration: none !important; /* Убираем синеву ссылок */
+            }
+            
+            /* Ссылка в заголовке тоже должна быть черной */
+            .header a { text-decoration: none !important; color: #000 !important; }
+
+            /* 3. БЛОКИ КОНТЕНТА (Уменьшаем спейсинг) */
+            .field {
+              background: #161616 !important; /* Темно-серый блок */
+              border: 1px solid #00ffb9 !important; /* Тонкая рамка */
+              padding: 10px !important;
+              margin-bottom: 10px !important; /* Отступ между блоками */
+            }
+            
+            /* Убираем внутренние отступы, чтобы было плотно */
+            .row { margin: 0 !important; padding: 0 !important; }
+            
+            /* 4. ИКОНКИ (Геометрия) */
+            .octicon {
+              fill: #00ffb9 !important;
+              /* Убираем фон у самих иконок, пусть работают на контрасте */
+              background: transparent !important; 
+            }
+
+            /* 5. ТЕКСТ */
+            /* Делаем текст светло-серым и компактным */
+            div, p, span, .field {
+              color: #eeeeee !important;
+              line-height: 1.2 !important; /* Плотный интерлиньяж */
+            }
+            .gray { color: #aaaaaa !important; }
+
+            /* 6. ПРОГРЕСС-БАРЫ (BAUHAUS STYLE) */
+            .progress-bar {
+              height: 18px !important; /* Очень жирные бары */
+              background-color: #333 !important;
+              border: none !important;
+              margin-top: 5px !important;
+              margin-bottom: 5px !important;
             }
 
             /* 7. КАЛЕНДАРЬ */
             .isocalendar .day { 
-              stroke: #0d1117 !important; /* Разделитель цвета фона */
-              stroke-width: 1.5px;
-              shape-rendering: crispEdges;
+              stroke: #161616 !important; /* Цвет фона блока */
+              stroke-width: 2px;
+              shape-rendering: optimizeSpeed; 
             }
+            /* Чистые цвета без градиентов */
             .isocalendar .day.l1 { fill: #0e4429 !important; }
             .isocalendar .day.l2 { fill: #006d32 !important; }
             .isocalendar .day.l3 { fill: #26a641 !important; }
