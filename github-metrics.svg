@@ -1,87 +1,79 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="1447" class="large">
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="874" class="large">
     <defs>
         <style/>
     </defs>
-    <style>@keyframes animation-gauge{0%{stroke-dasharray:0 329}}@keyframes animation-rainbow{0%,to{color:#7f00ff;fill:#7f00ff}14%{color:#a933ff;fill:#a933ff}29%{color:#007fff;fill:#007fff}43%{color:#00ff7f;fill:#00ff7f}57%{color:#ff0;fill:#ff0}71%{color:#ff7f00;fill:#ff7f00}86%{color:red;fill:red}}svg{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:14px;color:#777}svg.large .largeable{width:474px}svg.large .largeable&gt;.row{width:100%}svg.large .column.largeable,svg.large .largeable-inline-flex,svg.large .row.largeable{display:inline-flex}svg.large .largeable-flex-wrap{display:flex;flex-wrap:wrap}h1,h2,h3{margin:8px 0 2px;padding:0;color:#0366d6}h1{font-size:20px;font-weight:700}h2,h3{font-weight:400}h1 svg,h2 svg,h3 svg{fill:currentColor}h2{font-size:16px}h3{font-size:14px}section&gt;.field{margin-left:5px;margin-right:5px}.field{display:flex;align-items:center;margin-bottom:2px;white-space:nowrap}.field svg{margin:0 8px;fill:#959da5;flex-shrink:0}.field.error{color:#cb2431}.field.error svg{fill:#cb2431}.row{display:flex;flex-wrap:wrap}.row section{flex:1 1 0}.column{display:flex;flex-direction:column;align-items:center}.center{justify-content:center}#metrics-end,.fill-width{width:100%}.margin-bottom{margin-bottom:16px}.avatar{border-radius:50%;margin:0 6px}.calendar.field{margin:4px 0 4px 7px}.calendar .day{outline:1px solid rgba(27,31,35,.04);outline-offset:-1px}svg.bar{margin:4px 0}.field.language{margin:0 8px;flex-grow:0}.field.language.details{display:flex;justify-content:space-between}.field.language.details small,.field.license.details small{display:flex;justify-content:space-between;color:#666;text-align:right}.field.language.details small&gt;*,.field.language.details&gt;*{flex:1 1 0}.field.language.details small&gt;:not(:last-child){margin-right:6px}svg.calendar{margin-left:13px;margin-top:4px}.field.license.details{display:flex;justify-content:space-between}:root{--color-calendar-graph-day-bg:#ebedf0;--color-calendar-graph-day-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-bg:#9be9a8;--color-calendar-graph-day-L2-bg:#40c463;--color-calendar-graph-day-L3-bg:#30a14e;--color-calendar-graph-day-L4-bg:#216e39;--color-calendar-halloween-graph-day-L1-bg:#ffee4a;--color-calendar-halloween-graph-day-L2-bg:#ffc501;--color-calendar-halloween-graph-day-L3-bg:#fe9600;--color-calendar-halloween-graph-day-L4-bg:#03001c;--color-calendar-winter-graph-day-L1-bg:#0a3069;--color-calendar-winter-graph-day-L2-bg:#0969da;--color-calendar-winter-graph-day-L3-bg:#54aeff;--color-calendar-winter-graph-day-L4-bg:#b6e3ff;--color-calendar-graph-day-L4-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L3-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L2-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-border:rgba(27,31,35,0.06)}</style>
-    <style>/* 1. ГЕОМЕТРИЯ И ШРИФТЫ */
+    <style>@keyframes animation-gauge{0%{stroke-dasharray:0 329}}@keyframes animation-rainbow{0%,to{color:#7f00ff;fill:#7f00ff}14%{color:#a933ff;fill:#a933ff}29%{color:#007fff;fill:#007fff}43%{color:#00ff7f;fill:#00ff7f}57%{color:#ff0;fill:#ff0}71%{color:#ff7f00;fill:#ff7f00}86%{color:red;fill:red}}svg{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:14px;color:#777}svg.large .largeable{width:474px}svg.large .largeable&gt;.row{width:100%}svg.large .column.largeable,svg.large .largeable-inline-flex,svg.large .row.largeable{display:inline-flex}svg.large .largeable-flex-wrap{display:flex;flex-wrap:wrap}h1,h2,h3{margin:8px 0 2px;padding:0;color:#0366d6}h1{font-size:20px;font-weight:700}h2,h3{font-weight:400}h1 svg,h2 svg,h3 svg{fill:currentColor}h2{font-size:16px}h3{font-size:14px}section&gt;.field{margin-left:5px;margin-right:5px}.field{display:flex;align-items:center;margin-bottom:2px;white-space:nowrap}.field svg{margin:0 8px;fill:#959da5;flex-shrink:0}.field.error{color:#cb2431}.field.error svg{fill:#cb2431}.row{display:flex;flex-wrap:wrap}.row section{flex:1 1 0}.column{display:flex;flex-direction:column;align-items:center}#metrics-end,.fill-width{width:100%}.margin-bottom{margin-bottom:16px}.avatar{border-radius:50%;margin:0 6px}.calendar.field{margin:4px 0 4px 7px}.calendar .day{outline:1px solid rgba(27,31,35,.04);outline-offset:-1px}svg.bar{margin:4px 0}.field.language{margin:0 8px;flex-grow:0}.field.language.details{display:flex;justify-content:space-between}.field.language.details small,.field.license.details small{display:flex;justify-content:space-between;color:#666;text-align:right}.field.language.details small&gt;*,.field.language.details&gt;*{flex:1 1 0}.field.language.details small&gt;:not(:last-child){margin-right:6px}svg.calendar{margin-left:13px;margin-top:4px}.field.license.details{display:flex;justify-content:space-between}:root{--color-calendar-graph-day-bg:#ebedf0;--color-calendar-graph-day-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-bg:#9be9a8;--color-calendar-graph-day-L2-bg:#40c463;--color-calendar-graph-day-L3-bg:#30a14e;--color-calendar-graph-day-L4-bg:#216e39;--color-calendar-halloween-graph-day-L1-bg:#ffee4a;--color-calendar-halloween-graph-day-L2-bg:#ffc501;--color-calendar-halloween-graph-day-L3-bg:#fe9600;--color-calendar-halloween-graph-day-L4-bg:#03001c;--color-calendar-winter-graph-day-L1-bg:#0a3069;--color-calendar-winter-graph-day-L2-bg:#0969da;--color-calendar-winter-graph-day-L3-bg:#54aeff;--color-calendar-winter-graph-day-L4-bg:#b6e3ff;--color-calendar-graph-day-L4-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L3-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L2-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-border:rgba(27,31,35,0.06)}</style>
+    <style>/* 1. ГЛОБАЛЬНЫЙ СБРОС */
 * { 
  border-radius: 0 !important; 
- font-family: 'Segoe UI', Arial, sans-serif !important;
+ font-family: 'Arial Black', 'Segoe UI', sans-serif !important;
 }
 
-/* 2. ФОН */
-svg { 
- background-color: #0d1117 !important; /bin /bin.usr-is-merged /boot /dev /etc /home /imagegeneration /lib /lib.usr-is-merged /lib32 /lib64 /lost+found /media /mnt /opt /proc /root /run /sbin /sbin.usr-is-merged /snap /srv /swapfile /sys /tmp /usr /var Темный фон GitHub */
-}
+/* Фон всей картинки - Почти черный */
+svg { background-color: #050505 !important; }
 
-/* 3. ЗАГОЛОВКИ (ТЕМНЫЙ ТЕКСТ НА МЯТНОМ) */
-h1, h2, h3 {
- background-color: #00ffb9 !important; /bin /bin.usr-is-merged /boot /dev /etc /home /imagegeneration /lib /lib.usr-is-merged /lib32 /lib64 /lost+found /media /mnt /opt /proc /root /run /sbin /sbin.usr-is-merged /snap /srv /swapfile /sys /tmp /usr /var Мятная плашка */
- color: #0d1117 !important; /bin /bin.usr-is-merged /boot /dev /etc /home /imagegeneration /lib /lib.usr-is-merged /lib32 /lib64 /lost+found /media /mnt /opt /proc /root /run /sbin /sbin.usr-is-merged /snap /srv /swapfile /sys /tmp /usr /var Темный текст (цвет фона) */
- padding: 5px 10px !important;
+/* 2. ЗАГОЛОВКИ (FIXED) */
+/* Применяем стиль ко всем возможным контейнерам заголовков */
+.header h2, .header .title, h1, h2, h3 {
+ background-color: #00ffb9 !important; /bin /bin.usr-is-merged /boot /dev /etc /home /imagegeneration /lib /lib.usr-is-merged /lib32 /lib64 /lost+found /media /mnt /opt /proc /root /run /sbin /sbin.usr-is-merged /snap /srv /swapfile /sys /tmp /usr /var МЯТНЫЙ ФОН */
+ color: #000000 !important; /bin /bin.usr-is-merged /boot /dev /etc /home /imagegeneration /lib /lib.usr-is-merged /lib32 /lib64 /lost+found /media /mnt /opt /proc /root /run /sbin /sbin.usr-is-merged /snap /srv /swapfile /sys /tmp /usr /var ЧЕРНЫЙ ТЕКСТ */
+ padding: 4px 10px !important;
  display: inline-block !important;
+ font-weight: 900 !important;
  text-transform: uppercase;
- font-weight: 800 !important;
- margin: 0 0 10px 0 !important;
- font-size: 14px !important;
- letter-spacing: 1px;
- /bin /bin.usr-is-merged /boot /dev /etc /home /imagegeneration /lib /lib.usr-is-merged /lib32 /lib64 /lost+found /media /mnt /opt /proc /root /run /sbin /sbin.usr-is-merged /snap /srv /swapfile /sys /tmp /usr /var Выравнивание заголовка по левому краю вместе с блоком */
- min-width: 150px; 
- text-align: center;
-}
-
-/* 4. ИКОНКИ (BAUHAUS STYLE) */
-/* Делаем иконки черными внутри мятного квадрата */
-.field svg.octicon {
- background-color: #00ffb9 !important;
- fill: #0d1117 !important;
- padding: 4px;
- width: 24px !important; 
- height: 24px !important;
- /bin /bin.usr-is-merged /boot /dev /etc /home /imagegeneration /lib /lib.usr-is-merged /lib32 /lib64 /lost+found /media /mnt /opt /proc /root /run /sbin /sbin.usr-is-merged /snap /srv /swapfile /sys /tmp /usr /var Убираем лишние отступы */
- margin-right: 10px;
-}
-
-/* 5. СТРУКТУРА И ПОЗИЦИОНИРОВАНИЕ (УБИРАЕМ ХАОС) */
-
-/* Контейнер каждого блока */
-.field {
- border: none !important;
- background: transparent !important;
- box-shadow: none !important;
- padding: 15px 0 !important; /bin /bin.usr-is-merged /boot /dev /etc /home /imagegeneration /lib /lib.usr-is-merged /lib32 /lib64 /lost+found /media /mnt /opt /proc /root /run /sbin /sbin.usr-is-merged /snap /srv /swapfile /sys /tmp /usr /var Вертикальные отступы */
+ font-size: 16px !important;
+ letter-spacing: -0.5px;
  margin: 0 !important;
- /bin /bin.usr-is-merged /boot /dev /etc /home /imagegeneration /lib /lib.usr-is-merged /lib32 /lib64 /lost+found /media /mnt /opt /proc /root /run /sbin /sbin.usr-is-merged /snap /srv /swapfile /sys /tmp /usr /var Горизонтальная линия-разделитель снизу */
- border-bottom: 2px solid #21262d !important; 
-}
-
-/* Жирная линия слева для всего контента (Ось выравнивания) */
-.content {
- border-left: 5px solid #00ffb9; /bin /bin.usr-is-merged /boot /dev /etc /home /imagegeneration /lib /lib.usr-is-merged /lib32 /lib64 /lost+found /media /mnt /opt /proc /root /run /sbin /sbin.usr-is-merged /snap /srv /swapfile /sys /tmp /usr /var Ось цвета заголовков */
- padding-left: 20px !important;
- margin-left: 5px;
-}
-
-/* Текст описания */
-.field .content div, p, span { 
- color: #c9d1d9 !important; 
- font-size: 13px;
-}
-
-/* 6. ПРОГРЕСС-БАРЫ (ЦВЕТНЫЕ БЛОКИ) */
-.progress-bar {
- height: 16px !important;
- background-color: #21262d !important;
+ width: fit-content !important;
  border: none !important;
- margin-bottom: 10px;
+ text-decoration: none !important; /bin /bin.usr-is-merged /boot /dev /etc /home /imagegeneration /lib /lib.usr-is-merged /lib32 /lib64 /lost+found /media /mnt /opt /proc /root /run /sbin /sbin.usr-is-merged /snap /srv /swapfile /sys /tmp /usr /var Убираем синеву ссылок */
+}
+
+/* Ссылка в заголовке тоже должна быть черной */
+.header a { text-decoration: none !important; color: #000 !important; }
+
+/* 3. БЛОКИ КОНТЕНТА (Уменьшаем спейсинг) */
+.field {
+ background: #161616 !important; /bin /bin.usr-is-merged /boot /dev /etc /home /imagegeneration /lib /lib.usr-is-merged /lib32 /lib64 /lost+found /media /mnt /opt /proc /root /run /sbin /sbin.usr-is-merged /snap /srv /swapfile /sys /tmp /usr /var Темно-серый блок */
+ border: 1px solid #00ffb9 !important; /bin /bin.usr-is-merged /boot /dev /etc /home /imagegeneration /lib /lib.usr-is-merged /lib32 /lib64 /lost+found /media /mnt /opt /proc /root /run /sbin /sbin.usr-is-merged /snap /srv /swapfile /sys /tmp /usr /var Тонкая рамка */
+ padding: 10px !important;
+ margin-bottom: 10px !important; /bin /bin.usr-is-merged /boot /dev /etc /home /imagegeneration /lib /lib.usr-is-merged /lib32 /lib64 /lost+found /media /mnt /opt /proc /root /run /sbin /sbin.usr-is-merged /snap /srv /swapfile /sys /tmp /usr /var Отступ между блоками */
+}
+
+/* Убираем внутренние отступы, чтобы было плотно */
+.row { margin: 0 !important; padding: 0 !important; }
+
+/* 4. ИКОНКИ (Геометрия) */
+.octicon {
+ fill: #00ffb9 !important;
+ /bin /bin.usr-is-merged /boot /dev /etc /home /imagegeneration /lib /lib.usr-is-merged /lib32 /lib64 /lost+found /media /mnt /opt /proc /root /run /sbin /sbin.usr-is-merged /snap /srv /swapfile /sys /tmp /usr /var Убираем фон у самих иконок, пусть работают на контрасте */
+ background: transparent !important; 
+}
+
+/* 5. ТЕКСТ */
+/* Делаем текст светло-серым и компактным */
+div, p, span, .field {
+ color: #eeeeee !important;
+ line-height: 1.2 !important; /bin /bin.usr-is-merged /boot /dev /etc /home /imagegeneration /lib /lib.usr-is-merged /lib32 /lib64 /lost+found /media /mnt /opt /proc /root /run /sbin /sbin.usr-is-merged /snap /srv /swapfile /sys /tmp /usr /var Плотный интерлиньяж */
+}
+.gray { color: #aaaaaa !important; }
+
+/* 6. ПРОГРЕСС-БАРЫ (BAUHAUS STYLE) */
+.progress-bar {
+ height: 18px !important; /bin /bin.usr-is-merged /boot /dev /etc /home /imagegeneration /lib /lib.usr-is-merged /lib32 /lib64 /lost+found /media /mnt /opt /proc /root /run /sbin /sbin.usr-is-merged /snap /srv /swapfile /sys /tmp /usr /var Очень жирные бары */
+ background-color: #333 !important;
+ border: none !important;
+ margin-top: 5px !important;
+ margin-bottom: 5px !important;
 }
 
 /* 7. КАЛЕНДАРЬ */
 .isocalendar .day { 
- stroke: #0d1117 !important; /bin /bin.usr-is-merged /boot /dev /etc /home /imagegeneration /lib /lib.usr-is-merged /lib32 /lib64 /lost+found /media /mnt /opt /proc /root /run /sbin /sbin.usr-is-merged /snap /srv /swapfile /sys /tmp /usr /var Разделитель цвета фона */
- stroke-width: 1.5px;
- shape-rendering: crispEdges;
+ stroke: #161616 !important; /bin /bin.usr-is-merged /boot /dev /etc /home /imagegeneration /lib /lib.usr-is-merged /lib32 /lib64 /lost+found /media /mnt /opt /proc /root /run /sbin /sbin.usr-is-merged /snap /srv /swapfile /sys /tmp /usr /var Цвет фона блока */
+ stroke-width: 2px;
+ shape-rendering: optimizeSpeed; 
 }
+/* Чистые цвета без градиентов */
 .isocalendar .day.l1 { fill: #0e4429 !important; }
 .isocalendar .day.l2 { fill: #006d32 !important; }
 .isocalendar .day.l3 { fill: #26a641 !important; }
