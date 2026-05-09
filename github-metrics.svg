@@ -133,7 +133,7 @@ rect.ContributionCalendar-day { rx: 0 !important; ry: 0 !important; }</style>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/>
                             </svg>
-                            3746 Commits
+                            3756 Commits
                         </div>
                         <div class="field">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -283,12 +283,12 @@ rect.ContributionCalendar-day { rx: 0 !important; ry: 0 !important; }</style>
                         <rect x="0" y="0" width="920" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="591.0087251146401" height="8" fill="#00ffb9"/>
-                    <rect mask="url(#languages-bar)" x="591.0087251146401" y="0" width="136.20934014100575" height="8" fill="#00d49a"/>
-                    <rect mask="url(#languages-bar)" x="727.2180652556459" y="0" width="111.13315116127164" height="8" fill="#009e76"/>
-                    <rect mask="url(#languages-bar)" x="838.3512164169175" y="0" width="39.88532070048951" height="8" fill="#5ec4a8"/>
-                    <rect mask="url(#languages-bar)" x="878.236537117407" y="0" width="32.259072030207086" height="8" fill="#3572A5"/>
-                    <rect mask="url(#languages-bar)" x="910.4956091476141" y="0" width="9.504390852385846" height="8" fill="#007a5e"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="591.3409818244967" height="8" fill="#00ffb9"/>
+                    <rect mask="url(#languages-bar)" x="591.3409818244967" y="0" width="136.0717788417806" height="8" fill="#00d49a"/>
+                    <rect mask="url(#languages-bar)" x="727.4127606662772" y="0" width="111.02091494718451" height="8" fill="#009e76"/>
+                    <rect mask="url(#languages-bar)" x="838.4336756134617" y="0" width="39.845039494150114" height="8" fill="#5ec4a8"/>
+                    <rect mask="url(#languages-bar)" x="878.2787151076118" y="0" width="32.22649276761261" height="8" fill="#3572A5"/>
+                    <rect mask="url(#languages-bar)" x="910.5052078752244" y="0" width="9.494792124775502" height="8" fill="#007a5e"/>
                 </svg>
                 <div class="field center horizontal-wrap fill-width">
                     <div class="field center no-wrap language">
@@ -2355,7 +2355,7 @@ rect.ContributionCalendar-day { rx: 0 !important; ry: 0 !important; }</style>
             </section>
             <footer>
                 <span>These metrics include private contributions</span>
-                <span>Last updated 10 May 2026, 01:34:58 (timezone Europe/Minsk) with lowlighter/metrics@3.34.0</span>
+                <span>Last updated 10 May 2026, 02:39:20 (timezone Europe/Minsk) with lowlighter/metrics@3.34.0</span>
             </footer>
         </div>
         <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
