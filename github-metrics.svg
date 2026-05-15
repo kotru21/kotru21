@@ -107,7 +107,7 @@ rect.ContributionCalendar-day { rx: 0 !important; ry: 0 !important; }</style>
                                     <rect class="day" x="150" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
                                     <rect class="day" x="165" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
                                     <rect class="day" x="180" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
-                                    <rect class="day" x="195" y="0" width="11" height="11" fill="#40c463" rx="2" ry="2"/>
+                                    <rect class="day" x="195" y="0" width="11" height="11" fill="#30a14e" rx="2" ry="2"/>
                                 </g>
                             </svg>
                         </div>
@@ -133,7 +133,7 @@ rect.ContributionCalendar-day { rx: 0 !important; ry: 0 !important; }</style>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/>
                             </svg>
-                            3783 Commits
+                            3786 Commits
                         </div>
                         <div class="field">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -283,12 +283,12 @@ rect.ContributionCalendar-day { rx: 0 !important; ry: 0 !important; }</style>
                         <rect x="0" y="0" width="920" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="595.5403703452067" height="8" fill="#00ffb9"/>
-                    <rect mask="url(#languages-bar)" x="595.5403703452067" y="0" width="134.44418698418735" height="8" fill="#00d49a"/>
-                    <rect mask="url(#languages-bar)" x="729.9845573293942" y="0" width="109.53740523377473" height="8" fill="#009e76"/>
-                    <rect mask="url(#languages-bar)" x="839.5219625631689" y="0" width="39.314250484567566" height="8" fill="#5ec4a8"/>
-                    <rect mask="url(#languages-bar)" x="878.8362130477365" y="0" width="31.795868366141715" height="8" fill="#3572A5"/>
-                    <rect mask="url(#languages-bar)" x="910.6320814138783" y="0" width="9.36791858612189" height="8" fill="#007a5e"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="595.6272771385081" height="8" fill="#00ffb9"/>
+                    <rect mask="url(#languages-bar)" x="595.6272771385081" y="0" width="134.4150475329492" height="8" fill="#00d49a"/>
+                    <rect mask="url(#languages-bar)" x="730.0423246714573" y="0" width="109.50410433639541" height="8" fill="#009e76"/>
+                    <rect mask="url(#languages-bar)" x="839.5464290078527" y="0" width="39.30229840465352" height="8" fill="#5ec4a8"/>
+                    <rect mask="url(#languages-bar)" x="878.8487274125063" y="0" width="31.78620197914553" height="8" fill="#3572A5"/>
+                    <rect mask="url(#languages-bar)" x="910.6349293916518" y="0" width="9.365070608348194" height="8" fill="#007a5e"/>
                 </svg>
                 <div class="field center horizontal-wrap fill-width">
                     <div class="field center no-wrap language">
@@ -2350,7 +2350,7 @@ rect.ContributionCalendar-day { rx: 0 !important; ry: 0 !important; }</style>
             </section>
             <footer>
                 <span>These metrics include private contributions</span>
-                <span>Last updated 15 May 2026, 18:58:44 (timezone Europe/Minsk) with lowlighter/metrics@3.34.0</span>
+                <span>Last updated 15 May 2026, 20:27:19 (timezone Europe/Minsk) with lowlighter/metrics@3.34.0</span>
             </footer>
         </div>
         <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
