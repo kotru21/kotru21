@@ -283,12 +283,12 @@ rect.ContributionCalendar-day { rx: 0 !important; ry: 0 !important; }</style>
                         <rect x="0" y="0" width="920" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="588.3219669945199" height="8" fill="#00ffb9"/>
-                    <rect mask="url(#languages-bar)" x="588.3219669945199" y="0" width="121.98843866358983" height="8" fill="#00d49a"/>
-                    <rect mask="url(#languages-bar)" x="710.3104056581097" y="0" width="88.22799428955011" height="8" fill="#009e76"/>
-                    <rect mask="url(#languages-bar)" x="798.53839994766" y="0" width="80.93945384536299" height="8" fill="#3572A5"/>
-                    <rect mask="url(#languages-bar)" x="879.4778537930229" y="0" width="30.01624127873049" height="8" fill="#5ec4a8"/>
-                    <rect mask="url(#languages-bar)" x="909.4940950717533" y="0" width="10.505904928246716" height="8" fill="#007a5e"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="588.4727658872146" height="8" fill="#00ffb9"/>
+                    <rect mask="url(#languages-bar)" x="588.4727658872146" y="0" width="121.93297607746277" height="8" fill="#00d49a"/>
+                    <rect mask="url(#languages-bar)" x="710.4057419646773" y="0" width="88.18788103959207" height="8" fill="#009e76"/>
+                    <rect mask="url(#languages-bar)" x="798.5936230042694" y="0" width="80.9026543627304" height="8" fill="#3572A5"/>
+                    <rect mask="url(#languages-bar)" x="879.4962773669998" y="0" width="30.002594261149394" height="8" fill="#5ec4a8"/>
+                    <rect mask="url(#languages-bar)" x="909.4988716281491" y="0" width="10.501128371850804" height="8" fill="#007a5e"/>
                 </svg>
                 <div class="field center horizontal-wrap fill-width">
                     <div class="field center no-wrap language">
@@ -2345,7 +2345,7 @@ rect.ContributionCalendar-day { rx: 0 !important; ry: 0 !important; }</style>
             </section>
             <footer>
                 <span>These metrics include private contributions</span>
-                <span>Last updated 23 Jul 2026, 14:02:18 (timezone Europe/Minsk) with lowlighter/metrics@3.34.0</span>
+                <span>Last updated 23 Jul 2026, 16:27:58 (timezone Europe/Minsk) with lowlighter/metrics@3.34.0</span>
             </footer>
         </div>
         <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
