@@ -133,7 +133,7 @@ rect.ContributionCalendar-day { rx: 0 !important; ry: 0 !important; }</style>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/>
                             </svg>
-                            4926 Commits
+                            4939 Commits
                         </div>
                         <div class="field">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -283,12 +283,12 @@ rect.ContributionCalendar-day { rx: 0 !important; ry: 0 !important; }</style>
                         <rect x="0" y="0" width="920" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="347.17047050595716" height="8" fill="#00ffb9"/>
-                    <rect mask="url(#languages-bar)" x="347.17047050595716" y="0" width="263.7211922807194" height="8" fill="#4F5D95"/>
-                    <rect mask="url(#languages-bar)" x="610.8916627866766" y="0" width="94.05890597801833" height="8" fill="#00d49a"/>
-                    <rect mask="url(#languages-bar)" x="704.9505687646949" y="0" width="83.54453520294119" height="8" fill="#009e76"/>
-                    <rect mask="url(#languages-bar)" x="788.4951039676362" y="0" width="80.97326332607567" height="8" fill="#3572A5"/>
-                    <rect mask="url(#languages-bar)" x="869.4683672937117" y="0" width="50.53163270628829" height="8" fill="#5ec4a8"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="346.6974938156466" height="8" fill="#00ffb9"/>
+                    <rect mask="url(#languages-bar)" x="346.6974938156466" y="0" width="262.001769760016" height="8" fill="#4F5D95"/>
+                    <rect mask="url(#languages-bar)" x="608.6992635756626" y="0" width="93.44565605368467" height="8" fill="#00d49a"/>
+                    <rect mask="url(#languages-bar)" x="702.1449196293472" y="0" width="84.63281738225108" height="8" fill="#3572A5"/>
+                    <rect mask="url(#languages-bar)" x="786.7777370115982" y="0" width="82.9998373951263" height="8" fill="#009e76"/>
+                    <rect mask="url(#languages-bar)" x="869.7775744067245" y="0" width="50.22242559327537" height="8" fill="#5ec4a8"/>
                 </svg>
                 <div class="field center horizontal-wrap fill-width">
                     <div class="field center no-wrap language">
@@ -311,15 +311,15 @@ rect.ContributionCalendar-day { rx: 0 !important; ry: 0 !important; }</style>
                     </div>
                     <div class="field center no-wrap language">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                            <path fill="#009e76" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
-                        </svg>
-                        HTML
-                    </div>
-                    <div class="field center no-wrap language">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                             <path fill="#3572A5" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                         </svg>
                         Python
+                    </div>
+                    <div class="field center no-wrap language">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                            <path fill="#009e76" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                        </svg>
+                        HTML
                     </div>
                     <div class="field center no-wrap language">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -2354,7 +2354,7 @@ rect.ContributionCalendar-day { rx: 0 !important; ry: 0 !important; }</style>
             </section>
             <footer>
                 <span>These metrics include private contributions</span>
-                <span>Last updated 15 Nov 2026, 21:17:23 (timezone Europe/Minsk) with lowlighter/metrics@3.34.0-beta</span>
+                <span>Last updated 16 Nov 2026, 02:17:34 (timezone Europe/Minsk) with lowlighter/metrics@3.34.0-beta</span>
             </footer>
         </div>
         <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
